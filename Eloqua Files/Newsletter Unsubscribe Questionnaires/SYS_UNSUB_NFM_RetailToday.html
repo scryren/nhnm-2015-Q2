@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Unsubscribe Confirmation</title>
+
+    <!--Scripts and Stylesheets-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
+
+    <script src="http://assets.penton.com/eloqua_site/nhnm/lib/foundation/js/foundation/foundation.js" type="text/javascript"></script>
+    <link href="http://assets.penton.com/eloqua_site/nhnm/lib/foundation/css/foundation.css" rel="stylesheet" type="text/css" />
+
+    <link href="http://assets.penton.com/eloqua_site/nhnm/css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="http://assets.penton.com/eloqua_site/nhnm/css/2.0/nhnm_page_nfm_2.0.css" rel="stylesheet" type="text/css" />
+    <link href="http://assets.penton.com/eloqua_site/nhnm/css/2.0/nhnm_form_nfm_2.0.css" rel="stylesheet" type="text/css" />
+
+  </head>
+  <body>    
+
+    <section id="identity">
+	<div class="row">
+		<div class="small-12 columns">
+			
+			<div class="row">
+
+				<div id="logo" class="small-12 text-left columns">
+					<a id="logo-link" href="http://newhope360.com/retail-home"></a>
+					&nbsp;
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</section> 
+
+<header id="page-heading">  
+  <div class="row block">
+    <div class="overlay">
+      <div class="small-12 columns">        
+          
+          <h1>
+            Newsletter Unsubscribe Confirmation 
+          </h1>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="content">  
+  <div class="row content block">
+    <div class="small-12 columns">      
+
+      <div class="row">     
+        <div class="small-12 text-center columns">
+          <article>
+
+            <h2>
+             <span class="eloquaemail">SYS_UNSUBSCRIBE_emailAddress1</span>
+            </h2>
+
+            <p>has been unsubscribed from <i>Natural Retail Today</i></p>
+     
+          </article>
+
+        </div>            
+      </div>
+    
+    </div>
+  </div>
+</section>
+
+<section id="eloqua-form">
+  <div class="row form block">
+    <div class="small-12 columns">                
+      <div class="row">
+        <div class="small-12 medium-10 large-7 medium-centered columns">       
+
+<!--START ELOQUA FORM CODE-->  
+<form method="post" name="submgmt" action="https://s2130.t.eloqua.com/e/f2" id="submgmt" class="">
+  <input value="SYS_UNSUB_NFM_RetailToday_2015Q2" type="hidden" name="elqFormName">
+  <input value="2130" type="hidden" name="elqSiteId">
+  <input name="elqCampaignId" type="hidden">
+
+<h3>Let us know why you've unsubscribed</h3>
+
+<input id="fieldEmailAddress" type="hidden" name="emailAddress" value="<eloqua type='emailfield' syntax='EmailAddress' />">
+
+ 
+<!--CUSTOM QUESTION SINGLE CHECKBOX-->
+  <div class="row">     
+    <div class="small-12 medium-12 checkbox-radio-container columns">  
+
+      <label class="checkbox-single">
+        <input name="customQuestion01" type="checkbox" value="on">
+        <span class="checkbox-option">
+          Content is not relevant to me         
+        </span>
+      </label>
+        
+    </div>
+  </div>     
+           
+<!--CUSTOM QUESTION SINGLE CHECKBOX-->
+  <div class="row">     
+    <div class="small-12 medium-12 checkbox-radio-container columns">  
+
+      <label class="checkbox-single">
+        <input name="customQuestion02" type="checkbox" value="on">
+        <span class="checkbox-option">
+          I didn't sign up for this          
+        </span>
+      </label>
+        
+    </div>
+  </div>  
+
+<!--CUSTOM QUESTION SINGLE CHECKBOX-->
+  <div class="row">     
+    <div class="small-12 medium-12 checkbox-radio-container columns">  
+
+      <label class="checkbox-single">
+        <input name="customQuestion03" type="checkbox" value="on">
+        <span class="checkbox-option">
+          I get too many emails from Club Industry         
+        </span>
+      </label>
+        
+    </div>
+  </div>  
+
+<!--CUSTOM QUESTION SINGLE CHECKBOX-->
+  <div class="row">     
+    <div class="small-12 medium-12 checkbox-radio-container columns">  
+
+      <label class="checkbox-single">
+        <input name="customQuestion04" type="checkbox" value="on">
+        <span class="checkbox-option">
+          I'm not the right person to be receiving this         
+        </span>
+      </label>
+        
+    </div>
+  </div>      
+
+
+<!--CUSTOM QUESTION PARAGRAPH FIELD-->
+  <div class="row">     
+    <div class="small-12 medium-12 columns">  
+    
+      <label for="customQuestion05">
+        Comments:
+        <label class="instructions">&#9733; Please keep responses under 500 characters (including white spaces).</label>
+      </label>
+
+    </div>
+
+    <div class="small-12 medium-12 columns">                          
+      <textarea id="fieldCustomQuestion05" name="customQuestion05"></textarea>    
+    </div>
+  </div> 
+
+<!--SUBMIT BUTTON-->       
+  <div class="row">
+    <div class="small-12 small-text-center columns">    
+          <input name="submgmt" type="submit" value="Send Feedback">
+    </div>
+  </div>
+
+
+<!--START Form Validation Code-->  
+<script src="https://img.en25.com/i/livevalidation_standalone.compressed.js" type="text/javascript"></script>
+
+<style type="text/css" media="screen">
+  .LV_validation_message{font-family: Arial, sans-serif; }
+  .LV_valid{ color:#00CC00; display:none; }
+  .LV_invalid{color:#CC0000; font-size:10px;}
+  .LV_valid_field, input.LV_valid_field:hover, input.LV_valid_field:active, textarea.LV_valid_field:hover, textarea.LV_valid_field:active { border: 1px solid #00CC00; }
+  .LV_invalid_field, input.LV_invalid_field:hover, input.LV_invalid_field:active, textarea.LV_invalid_field:hover, textarea.LV_invalid_field:active { border: 1px solid #CC0000; }
+</style>
+
+<script type="text/javascript">
+
+    var fieldCustomQuestion05 = new LiveValidation("fieldCustomQuestion05", {validMessage: "", onlyOnBlur: true});fieldCustomQuestion05.add(Validate.Length, {tooShortMessage:"Please keep your response under 500 characters", tooLongMessage: "Please keep your response under 500 characters",  minimum: 0, maximum: 500});  
+    
+</script>
+<!--END Form Validation Code-->  
+
+<!--END ELOQUA FORM CODE-->  
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+	<div class="row">
+		<div class="small-12 columns">
+			
+			<div class="row">
+
+				<div class="small-12 medium-6 medium-text-left small-text-center columns">
+					<a href="http://www.penton.com"><img src="http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{fa649af8-a6dd-479b-a16d-bf793a9133fd}_PEN_LOGO_colorPenton-2015Q1_262x100.png"></a>
+				</div>
+
+				<div id="copyright" class="small-12 medium-6 medium-text-right small-text-center columns">
+					<span elqid="336" elqtype="Section" class="remove-absolute" style="display: block"><span class="copyrightNoticeText">© 2015 <a href="http://www.penton.com?elqTrack=true">Penton</a>. All Rights Reserved.</span></span>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</footer> 
+
+  </body>
+</html>

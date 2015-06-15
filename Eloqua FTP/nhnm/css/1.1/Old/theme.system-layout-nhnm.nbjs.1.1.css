@@ -1,0 +1,400 @@
+/* 
+* Theme Name: System Layout - NBJS
+* Child Theme: NBJ Summit
+* Version: 1.1 (Q1 2015)
+* Last Updated: 2/4/2015
+* Author: Penton, Inc.
+* URL: http://www.penton.com
+* Description: Branding for NBJ Summit. Contains hero image, colors and typography.
+*/
+
+/* ==========================================================================
+   @IMPORT
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700,700italic);
+
+/* ==========================================================================
+   LAYOUT
+   ========================================================================== */
+
+
+/* Links
+   ================================== */
+
+a:link, a:visited {color: #69af3f; text-decoration: underline;}
+  
+  a:hover, a:focus {color: rgba(105, 175 ,63, 0.6);} 
+
+
+footer a:link, footer a:visited {color: rgba(255, 255, 255, 0.5);}
+footer a:hover, footer a:focus {color: rgba(255, 255, 255, 0.8);} 
+
+   
+/* Images
+   ================================== */
+
+#hero {
+  background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{b6fb123a-d907-445b-ac19-fc0a8d0a4b04}_NBJS_HDR_sailboats_1920x800.jpg"); 
+}   
+
+img.bordered {
+  border: 5px solid #333333;
+}
+
+#footer-image {
+  background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{d6a1fad5-71b3-484c-8b5f-f704b45601a7}_NBJ_HDR_sealsBuoy_1920x800.jpg"); 
+  background-position: left bottom;
+  height: 350px;
+}
+
+/* Background-color
+   ================================== */
+
+footer { background-color: #222222; }
+  footer .row { background-color: #222222; }
+
+#banner-top { background-color: #2D323E;}
+  #banner-top .row { background-color: #477c27; }
+
+#content { background-color: #ffffff; }
+  #content #headline, #content #headline .row { background-color: #transparent; } 
+  #content .row { background-color: #ffffff; }  
+
+#eloqua-form {background-color: #eeeeee;} 
+
+#form-headline {
+  background-color: #2D323E; 
+  border-bottom: 2px solid #181b22; 
+}
+
+#hero { background-color: #2D323E; }
+
+  /* #hero-overlay {background-color: rgba(103, 174, 61, 0.0);} */
+
+#show-banner { 
+  background-color: #2D323E; 
+  border-bottom: 3px solid #21252e;
+}
+  #show-banner .row { background-color: #2D323E; }
+
+.divider { background-color: #2D323E; }
+  .divider .row { background-color: #2D323E; }
+
+
+
+/* Social Media Icons + Font Awesome
+   ================================== */
+/* Design from http://codepen.io/graygilmore/pen/oclvb */
+
+.social-media a {
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+  .social-media a:before {  
+    color: #ffffff;
+    font-family: 'FontAwesome';
+  }
+
+.share-count {
+   color: #ffffff;
+}
+ 
+ 
+/* ==========================================================================
+   TYPE
+   ========================================================================== */
+
+
+/* Headers
+   ================================== */
+
+h1 {
+  color: #444444;
+  font-family: 'Roboto Condensed', Arial, sans-serif; 
+  font-weight: 700;  
+}
+
+  header h1  {
+    color: #69af3f;
+    text-align: left;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);      
+  } 
+
+h2 {
+  color: #69af3f;
+  font-family: 'Roboto Slab', Georgia, sans-serif; 
+  font-weight: 700;
+}
+
+  #form-headline h2 {
+    color: #ffffff;
+    font-family: 'Roboto Slab', Georgia, serif;
+    text-align: center; 
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);    
+  }
+
+h3 { 
+  color: #444444;
+  font-family: 'Roboto Condensed', Arial, sans-serif;  
+  font-weight: 700;
+}
+    
+  #eloqua-form h3 { 
+    color: #444444;
+    font-family: 'Roboto Condensed', Georgia, serif;
+    text-align: center; 
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3); 
+    margin-top: 25px;  
+    border-bottom: 1px dashed #aaaaaa;
+    padding-bottom: 5px;
+  }  
+    
+h4 {
+  color: #444444;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 700;
+}
+
+  #eloqua-form h4 { 
+    color: #444444;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-weight: 400;
+  }   
+
+
+
+/* Footer
+   ================================== */
+
+footer {  
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: bold;
+}
+ 
+  footer a {        
+    font-family: Roboto, Arial, sans-serif;    
+    font-weight: bold;    
+    text-decoration: underline; 
+  }
+ 
+.copyrightNoticeText { }
+
+
+/* Paragraph
+   ================================== */
+
+p {
+  color: #555555;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: normal; 
+
+}
+
+  header p {
+    color: #ffffff;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 700;
+  }
+
+  #form-headline p {
+    color: #ffffff;    
+    text-align: center;
+  }
+ 
+/* Lists
+   ================================== */
+
+ul, li {
+  color: #555555;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: normal;  
+}
+ 
+/* Newsletter
+   ================================== */
+
+.newsletter-description {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: normal;
+}
+ 
+.newsletter-name {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 600; 
+} 
+ 
+.newsletter-subheader {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 700;  
+}
+
+
+/* ==========================================================================
+   FORM
+   ========================================================================== */
+ 
+/* Labels
+   ================================== */
+
+#submgmt label {
+  background-color: #dddddd;  
+  border-left: 0px solid #749461;
+  color: #626262;    
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+
+}
+ 
+  #submgmt label.instructions {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+   
+  }
+ 
+  #submgmt label.optional {   
+    font-family: Arial, sans-serif;   
+    font-weight: normal;
+  }
+
+ 
+/* Fields
+   ================================== */
+
+#submgmt input[type="text"],
+#submgmt select {
+  border-left: 6px solid #bfbfbf;  
+  color: #777777;   
+} 
+
+#eloqua-form .checkbox-radio-container {background-color: #ffffff;}
+  #eloqua-form .checkbox-radio-container label {color: #777777;}
+
+#submgmt .checkbox-option {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+}
+
+
+/* Submit Button
+   ================================== */
+
+/* Submit Button */
+#submgmt input[type="submit"] {
+  background-color: #2D323E;
+  border-bottom: 2px solid #181b22 !important; 
+  color: #ffffff; 
+  font-family: Roboto, Arial, sans-serif !important;  
+  font-weight: 600;  
+}
+
+#submgmt input[type=submit]:hover, #submgmt input[type=submit]:focus {
+  background-color: #21252e;
+} 
+
+
+/* Legal Statement
+   ================================== */
+ 
+#privacy-statement {
+  background-color: #ffffff;  
+}
+
+.privacy-statement {
+  color: #555555 !important; 
+  font-family: Arial, sans-serif !important;
+} 
+
+/* Form Validation
+   ================================== */
+#privacy-statement .LV_invalid {
+  color: #a12727;  
+}
+
+#submgmt .LV_invalid {
+  color: #a12727;
+}
+  
+#submgmt .LV_valid {
+  color: #3db43d;
+}
+  
+#submgmt .LV_validation_message { font-family: Arial, sans-serif; }
+ 
+#submgmt .LV_valid_field,
+input.LV_valid_field:hover, 
+input.LV_valid_field:active,
+textarea.LV_valid_field:hover, 
+textarea.LV_valid_field:active {    
+  border-left: 6px solid #3db43d !important;    
+}
+    
+#submgmt .LV_invalid_field, 
+input.LV_invalid_field:hover, 
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover, 
+textarea.LV_invalid_field:active {    
+  border-left: 6px solid #a12727 !important;
+}
+
+
+
+
+
+/* ==========================================================================
+   @MEDIA
+   ========================================================================== */
+
+/* Small | Mobile (Max 640px)
+   ================================== */
+
+@media (max-width: 40em) { 
+
+  #hero {
+    background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{984a7b9b-4147-4c0a-8399-aa4487a3b845}_NBJS_HDR_sailboats_640x800.jpg"); 
+  }
+
+  #footer-image {
+    background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{1262e917-da3a-4cb7-b56d-1ae5db1c5c26}_NBJ_HDR_sealsBuoy_640x800.jpg"); 
+    background-position: left bottom;
+    height: 150px;
+  }
+
+  #show-banner {
+    display: none;
+  }
+  
+
+}
+
+/* Medium | Tablet (641px - 1024px)
+   ================================== */
+@media (min-width: 40.063em) and (max-width: 64em) { 
+
+  #hero {
+    background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{e5c5eab3-2d38-43bf-94db-5c527e9a4866}_NBJS_HDR_sailboats_1024x800.jpg"); 
+  } 
+
+  #footer-image {
+    background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{0971644c-f7dc-4c33-9696-5c1e8f70ac92}_NBJ_HDR_sealsBuoy_1024x800.jpg"); 
+    background-position: left bottom;
+    height: 250px;
+  }
+
+} 
+
+/* Large | LQ Desktop (1025px - 1440px)
+   ================================== */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { }
+
+/* XLarge | HQ Desktop (1441px - 1920px)
+   ================================== */
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { }
+
+/* XXLarge | Apple Thunderbolt (1921px+)
+   ================================== */
+@media only screen and (min-width: 120.063em) { }

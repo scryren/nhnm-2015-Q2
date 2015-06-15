@@ -1,0 +1,22 @@
+/* 
+* Theme Name: Website Layout - NEXT-Orange
+* Child Theme: NEXT Trend
+* Version: 1.1 (Q1 2015)
+* Last Updated: 2/4/2015
+* Author: Penton, Inc.
+* URL: http://www.penton.com
+* Description: NEXT Trend branding for website forms.
+*/
+
+/* Submit Button */
+#submgmt input[type="submit"] {
+  background-color: #f6861f;
+  border-bottom: 2px solid #ce6504 !important; 
+  color: #ffffff; 
+  font-family: Roboto, Arial, sans-serif !important;  
+  font-weight: 600;  
+}
+
+#submgmt input[type=submit]:hover, #submgmt input[type=submit]:focus {
+  background-color: #e87811;
+} 

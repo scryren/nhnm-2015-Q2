@@ -1,0 +1,76 @@
+<!--START FORM FUCNTIONS-->   
+<script type="text/javascript">
+
+    function LoadFields(FormID) {
+    
+      var container, inputs, index;
+      
+      // Get the Form element
+      container = document.getElementById(FormID);
+      
+      //'#yourFormHTMLName :input'
+      inputs = $('#submgmt :input');
+
+      // Loops through every INPUT on the form
+      for (index = 0; index < inputs.length; index++) {
+        var LookupID = inputs[index].id;
+        var LookupValue = GetElqContentPersonalizationValue(LookupID);
+        // This value is used for CHECK BOX value comparisons
+        var LowerCaseValue = LookupValue.toLowerCase();
+  
+        // deal with inputs[index] element.  Compare to LookupID and LookupValue.
+
+        // Form Field Prepopulation
+        if (inputs[index].id == LookupID) {
+          if (inputs[index].type == "checkbox") {
+            // Place code here for CHECKBOX Inputs
+            if (LowerCaseValue == "on") inputs[index].checked=true;
+            else if (LowerCaseValue == "true") inputs[index].checked=true;
+            else if (LowerCaseValue == "y") inputs[index].checked=true;
+            else if (LowerCaseValue == "yes") inputs[index].checked=true;
+            else if (LowerCaseValue == "checked") inputs[index].checked=true;
+            else if (LowerCaseValue == "1") inputs[index].checked=true;
+          } else if (inputs[index].type == "radio") {
+            // Place code here for RADIO BUTTON Inputs
+          } else if (inputs[index].type == "select-one") {
+        
+            $("#"+inputs[index].id).val(LookupValue).attr('selected', true).siblings('option').removeAttr('selected');
+            
+
+          } else if (inputs[index].type == "text") {
+            // Place code here for STANDARD TEXT Inputs
+            inputs[index].value = LookupValue;
+          } else {
+            // All Other Inputs = do nothing
+          } 
+        }
+      
+      }
+      
+        $("#"+inputs[index].id).selectmenu("refresh", true); 
+    }
+</script>     
+<!--END FORM FUCNTIONS-->   
+  
+<!--START DATA LOOKUPS-->
+<script type="text/javascript">
+
+  // SetElqContent is triggered by the Data Lookup Scripts automatically.  The "FirstLookup" modification allows for the Visitor Lookup to trigger the second Lookup (Contact/Datacard/Prospect/Company)
+  var FirstLookup = true;
+    function SetElqContent() {
+      if (FirstLookup) {
+      //LOOKUP B:  Eloqua Contact/DataCard/Prospect/Company Data Lookup from Email Address
+      _elqQ.push(['elqDataLookup', escape(LookupIdPrimary), '<' + PrimaryUniqueField +'>' + GetElqContentPersonalizationValue(VisitorUniqueField) + '</' + PrimaryUniqueField + '>']);
+      FirstLookup = false;
+    } else {
+      //This is triggered the after Lookup B fires.  LoadFields starts the field prepoulation process.
+      LoadFields(EloquaFormID);
+    }
+            
+  }
+
+  // LOOKUP A:  Eloqua Visitor Data Lookup from Cookie  -  Ensure VisitorUniqueField is pulled in the Profile View
+  _elqQ.push(['elqDataLookup', escape(LookupIdVisitor), '']);
+      
+</script>
+<!--END DATA LOOKUPS-->

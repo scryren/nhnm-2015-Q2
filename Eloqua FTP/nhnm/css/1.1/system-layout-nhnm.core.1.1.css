@@ -1,0 +1,658 @@
+/* 
+* Theme Name: System Layout - NHNM
+* Child Theme: N/A
+* Version: 1.1 (Q1 2015)
+* Last Updated: 5/18/2015
+* Author: Penton, Inc.
+* URL: http://www.penton.com
+*/
+
+
+/* ==========================================================================
+   @IMPORT
+   ========================================================================== */
+
+@import url(//fonts.googleapis.com/css?family=Roboto:400,400italic,500,700);
+@import url(//fonts.googleapis.com/css?family=Roboto+Slab:300,400,700);
+@import url(//fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700,700italic);
+
+
+/* ==========================================================================
+   LAYOUT
+   ========================================================================== */
+
+body { 
+  background-color: #222222; 
+  font-size: 100%;
+}
+
+/* Links
+   ================================== */
+
+a:link, a:visited {color: #008cba;}
+  
+  a:hover, a:focus {color: rgba(0, 140, 186, 0.6);} 
+
+footer a:link, footer a:visited {color: rgba(255, 255, 255, 0.5);}
+footer a:hover, footer a:focus {color: rgba(255, 255, 255, 0.8);} 
+
+a:link, a:visited, a:hover, a:focus {
+  transition: color .2s ease-out;
+  -moz-transition: color .2s ease-out;
+  -webkit-transition: color .2s ease-out;
+  -o-transition: color .2s ease-out;
+}
+	
+/* Foundation Grid Overrides
+   ================================== */
+
+.row { }
+.row-full-width {width: 100%;}
+
+ 
+/* Structure
+   ================================== */
+
+footer #copyright {padding: 3% 0% 2% 0%;}
+
+#banner-nxtt-01 {
+  background-color: #69af3f;
+  background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{b954e5c9-3b5d-47f6-b619-0e44e3f4a227}_NXTA_BKGD_nnnnGreen_45x91.jpg");
+  background-repeat: repeat;
+  border-bottom: 4px solid #9fd172;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+  #banner-nxtt-01 p {
+    color: #ffffff;
+    font-size: 1.6em; 
+    font-family: 'Roboto', Arial, sans-serif; 
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.25em; 
+  }
+
+#banner-en15-01 {
+  background-color: #004681;    
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+  #banner-en15-01 p {
+    color: #ffffff;
+    font-size: 0.875em; 
+    font-family: 'Roboto', Arial, sans-serif;     
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.25em; 
+  }
+
+
+#banner-top .row,
+#content .row,
+#show-banner .row {
+  padding-left: 15px; /* Indent for Content  */
+  padding-right: 15px; 
+}  
+  
+  #content .row .row {
+    /* Clear indent for nested rows */
+    padding: 0px 0px 0px 0px;
+  }
+
+
+#eloqua-form-container .row,
+#eloqua-form-container .columns  {
+  /* Clear indent for nested rows */
+  padding: 0px;
+  margin: 0px;
+} 
+
+#content #headline {padding: 2% 0% 1% 0%;}
+
+#hero {
+  padding-top: 0%; /* Optical adjustment */
+  padding-right: 0px;
+  padding-bottom: 0%;
+  padding-right: 0px; 
+}
+
+  #hero-overlay {
+    padding-top: 16%; /* Optical adjustment */
+    padding-right: 0px;
+    padding-bottom: 15%;
+    padding-right: 0px; 
+  }
+
+#show-banner, #banner-top {
+  position: fixed; 
+  top: 0px; 
+  left: 0px; 
+  z-index: 999; 
+  width:100%;
+}
+
+.divider .row {
+  font-size: 10px;
+  height: 30px; 
+}
+ 
+ 
+/* Images
+   ================================== */
+
+footer img {  
+  height: 50px; 
+  margin: 8px 5px 8px 0px;
+  float: left;
+}
+
+#banner-top img, #show-banner img {  
+  height: 50px;	
+  margin: 5px 5px 5px 0px;
+  float: left;
+}
+
+#hero {
+    background-attachment: scroll;
+    background-clip: border-box;
+/*  background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{88c71f46-e84f-4b8c-a483-98abc36ba4b3}_NH360_HDR_axeGardenHandsPotato_2088x800.jpg"); */
+    background-origin: padding-box;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: left;
+}
+
+img.bordered {
+  border: 5px solid #333333;
+}
+
+img.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-bottom: 15px;
+}
+
+img.inline {
+  display: inline-block;	
+	padding: 0px 5px 0px 5px;
+}
+
+
+img.radius {
+   border-radius: 2px;
+  -moz-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  -webkit-border-radius: 2px; 
+}
+
+#footer-image {
+  background-attachment: fixed;
+  background-clip: border-box;  
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  text-align: left;   
+  height: 350px;
+}
+
+/* Background-color
+   ================================== */
+
+footer { background-color: #222222; }
+  footer .row { background-color: #222222; }
+
+form {background-color: ; }
+
+#banner-top { 
+  background-color: #222222;
+  border-bottom: 3px solid #111111;
+}
+  #banner-top .row { background-color: #222222; }
+
+#content { background-color: #ffffff; }
+  #content #headline, #content #headline .row { background-color: transparent; }
+  #content .row { background-color: #ffffff; }  
+  
+#eloqua-form {
+  background-color: #eeeeee;
+} 
+
+#eloqua-form .columns {
+  background-color: transparent;
+}
+
+#form-headline {
+  background-color: #424242; 
+  border-bottom: 2px solid #2d2d2d;
+}
+
+#hero { background-color: #454545; }
+
+#show-banner { 
+  background-color: #222222;
+  border-bottom: 3px solid #111111;
+}
+  #show-banner .row { background-color: #222222; }
+
+.divider { background-color: #454545; }
+  .divider .row { background-color: #454545; }
+
+
+/* Utility: Radius | Apply to first and last row
+   ================================== */
+
+.radius-top {  
+  -webkit-border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px; 
+  border-top: 1px solid #dddddd;  
+  border-left: 1px solid #dddddd; 
+  border-right: 1px solid #dddddd; 
+  margin-top: 30px;  
+}
+
+.radius-bottom {
+  border-radius: 0;
+  -webkit-border-bottom-left-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px; 
+  border-bottom: 1px solid #dddddd; 
+  border-left: 1px solid #dddddd; 
+  border-right: 1px solid #dddddd; 
+  margin-bottom: 30px;  
+}
+
+/* Social Media Icons + Font Awesome
+   ================================== */
+/* Design from http://codepen.io/graygilmore/pen/oclvb */
+
+.social-media {
+  border-top: 1px solid #dddddd;  
+  padding-top: 10px;
+}
+
+.comments {
+  border-top: 0px solid #dddddd;  
+  text-align: right;
+  padding-top: 0px;
+  padding-bottom: 5px;  
+}
+
+.social-media a {
+  *display: inline;
+  *vertical-align: auto;
+  *zoom: 1;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 13px;  
+  line-height: 30px;  
+  padding-left: 45px;
+  padding-right: 17px; 
+  position: relative; 
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+
+  .social-media a:before {  
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    bottom: 0;
+    color: #ffffff;
+    font-family: 'FontAwesome';
+    font-size: 14px;
+    left: 0;  
+    line-height: 30px;
+    position: absolute;
+    text-align: center;  
+    top: 0;
+    width: 30px;
+  }
+
+.share-count {
+   background: rgba(255, 255, 255, 0.3);
+   border-radius: 10px;
+   color: #ffffff;
+   margin-left: 5px;
+   padding: 3px 10px 3px 10px; 
+}
+
+.fa-comment {background: #4f882d;}
+  .fa-comment:before {background: #69af3f;}
+
+.fa-facebook {background-color: #263961;} 
+  .fa-facebook:before {background-color: #3b5998;}  
+
+.fa-google-plus {background: #ac2d1e;}
+  .fa-google-plus:before {background: #dd4b39;}
+
+.fa-linkedin {background: #15648a;}
+  .fa-linkedin:before {background: #007bb6;}
+
+.fa-pinterest {background: #89161a;}
+  .fa-pinterest:before {background: #cb2027;}
+
+.fa-twitter {background-color: #0074a1;}  
+  .fa-twitter:before {background-color: #00aced;}  
+
+ 
+/* ==========================================================================
+   TYPE
+   ========================================================================== */
+
+
+/* Headers
+   ================================== */
+
+h1 { 
+  color: #444444;
+  font-size: 2.3em; 
+  line-height: 1.25em; 
+  font-family: 'Roboto Condensed', Arial, sans-serif; 
+  font-weight: bold;  
+}
+
+  header h1  {
+    color: #444444;
+    text-align: left;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);      
+  } 
+
+h2 { 
+  color: #444444;
+  font-size: 1.75em; 
+  line-height: 1.25em; 
+  font-family: 'Roboto Slab', Georgia, serif; 
+  font-weight: bold;
+}
+
+  #form-headline h2 {
+    color: #ffffff;
+    font-family: 'Roboto Slab', Georgia, serif;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3)
+  }
+
+h3 { 
+  color: #444444;
+  font-size: 1.5em; 
+  line-height: 1.25em;
+  font-family: 'Roboto Condensed', Arial, sans-serif; 
+  font-weight: bold;
+}
+
+  #eloqua-form h3 { 
+    color: #444444;
+    font-family: 'Roboto Condensed', Georgia, serif;
+    text-align: center; 
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3); 
+    margin-top: 25px;  
+    border-bottom: 1px dashed #aaaaaa;
+    padding-bottom: 5px;
+  }  
+  
+h4 { 
+  color: #444444;
+  font-size: 1.25em; 
+  line-height: 1.25em;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: bold;
+}
+
+  #eloqua-form h4 { 
+    color: #444444;
+    font-size: 1.125em; 
+    line-height: 1.25em;
+    font-family: 'Roboto Condensed', Arial, sans-serif; 
+    font-weight: bold;
+  }   
+
+h5 { font-size: .83em; }
+h6 { font-size: .67em; }
+
+
+/* Footer
+   ================================== */
+
+footer {  
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Arial, sans-serif;
+  font-size: 0.625em;
+  font-weight: bold;
+  line-height: 1.125em; 
+}
+ 
+  footer a {        
+    font-family: Arial, sans-serif;    
+    font-weight: bold;    
+    text-decoration: underline; 
+  }
+ 
+.copyrightNoticeText { }
+
+
+/* Paragraph
+   ================================== */
+
+p {
+  color: #555555;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  font-weight: normal; 
+
+}
+
+  header p {
+    color: #ffffff;
+    font-size: 1.25em; 
+    line-height: 1.25em;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  #form-headline p {
+    color: #ffffff;    
+    text-align: center;
+  }
+   
+  #show-banner p, #banner-top p {
+    float: right;
+    font-size: 12px; 
+    color: #ffffff; 
+    margin: 0px; 
+    padding: 12px 0px 10px 0px;
+  }
+
+/* Lists
+   ================================== */
+
+ul, li {
+	color: #555555;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+ul li {
+  padding-bottom: 1.125em;  
+}
+ 
+/* Newsletter
+   ================================== */
+
+.newsletter-description {
+  font-family: Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: normal;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px; 
+}
+ 
+.newsletter-name {
+  font-family: Arial, sans-serif;
+  font-size: 1.125em;
+  font-weight: 600; 
+} 
+ 
+.newsletter-subheader {
+  font-family: Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: 700;
+  margin: 10px 0px 0px 0px;
+  padding: 0px 0px 0px 0px; 
+}
+
+
+/* ==========================================================================
+   @MEDIA
+   ========================================================================== */
+
+/* Small | Mobile (Max 640px)
+   ================================== */
+
+@media (max-width: 40em) { 
+
+  body {font-size: 90%;}
+
+  h1 { 
+    font-size: 1.75em  !important; 
+    line-height: 1.125em;     
+  }
+
+  h2 { 
+    font-size: 1.50em  !important; 
+    line-height: 1.25em; 
+  }
+
+  h3 { 
+    font-size: 1.30em  !important; 
+    line-height: 1.25em;
+  }   
+    
+  h4 { 
+    font-size: 1.125em; 
+    line-height: 1.25em;
+  }   
+
+  h5 { font-size: .83em; }
+  h6 { font-size: .67em; }
+
+  footer img {    
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;     
+  }
+
+  #banner-nxtt-01 {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+    #banner-nxtt-01 p {    
+      font-size: 1.25em; 
+      line-height: 1.25em;
+    }
+
+  #banner-top, #show-banner {
+    display: none;
+  }
+
+  #banner-top img, #show-banner img {
+      height: auto; 
+      height: 35px;
+      margin: 5px 3px 5px 3px; 
+    }
+
+  /* #hero-overlay.no-hero-copy {
+    padding-top: 10%;
+    padding-bottom: 9%;
+  } */
+
+  #content #headline {padding: 4% 0% 1% 0%;}
+
+  #hero-overlay {
+    padding-top: 20%; /* Optical adjustment */   
+    padding-bottom: 19%;    
+  }
+
+  .hero-logo {
+    max-width: 150px !important;
+  }
+
+  .hero-logo-02 {
+    max-width: 150px  !important;
+  } 
+
+  .social-media {    
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .comments {
+    text-align: right;
+    padding-top: 0px;
+    padding-bottom: 5px;  
+  }
+
+}
+
+/* Medium | Tablet (641px - 1024px)
+   ================================== */
+@media (min-width: 40.063em) and (max-width: 64em) { 
+
+  body {font-size: 95%;}
+
+  footer img {    
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;     
+  }
+
+  footer #copyright {padding: 1% 0% 2% 0%;}
+
+  #hero-overlay {
+    padding-top: 18%; /* Optical adjustment */
+    padding-right: 0px;
+    padding-bottom: 17%;
+    padding-right: 0px; 
+  }
+
+  .social-media {    
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .comments {
+    text-align: right;
+    padding-top: 0px;
+    padding-bottom: 5px;  
+  }
+
+}
+
+/* Large | LQ Desktop (1025px - 1440px)
+   ================================== */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { }
+
+/* XLarge | HQ Desktop (1441px - 1920px)
+   ================================== */
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { }
+
+/* XXLarge | Apple Thunderbolt (1921px+)
+   ================================== */
+@media only screen and (min-width: 120.063em) { }
+

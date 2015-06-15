@@ -1,0 +1,198 @@
+/* Labels
+   ================================== */
+
+  #eloqua-form h3 { 
+    color: #444444;
+    text-align: center; 
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3); 
+    margin-top: 25px;  
+    border-bottom: 1px dashed #aaaaaa;
+    padding-bottom: 5px;
+  }  
+  
+
+/* Labels
+   ================================== */
+
+/* Clear Foundation Margins */
+#submgmt input[type="checkbox"],
+#submgmt input[type="color"], 
+#submgmt input[type="date"], 
+#submgmt input[type="datetime"], 
+#submgmt input[type="datetime-local"], 
+#submgmt input[type="email"], 
+#submgmt input[type="file"],
+#submgmt input[type="month"], 
+#submgmt input[type="number"], 
+#submgmt input[type="password"], 
+#submgmt input[type="radio"],
+#submgmt input[type="search"], 
+#submgmt input[type="tel"], 
+#submgmt input[type="text"], 
+#submgmt input[type="time"], 
+#submgmt input[type="url"], 
+#submgmt input[type="week"], 
+#submgmt textarea,
+#submgmt select {
+  margin: 0px; 
+}
+
+
+#submgmt label {
+  cursor: auto;
+  font-weight: 600;
+  margin: 20px 0px 0px;
+}
+
+  #submgmt label.instructions {
+    display: block; 
+    font-weight: 400; 
+		font-size: 75%;      
+    margin: 0px;     
+    padding: 0px; 
+  }
+
+  #submgmt label.optional {    
+    display: inline;    
+    font-weight: 400; 
+    font-size: 75% ;   
+    margin: 0px;     
+    padding: 0px;  
+  }
+
+  #submgmt label.checkbox-single, #submgmt label.checkbox-multiple {      
+    margin: 0px;
+    padding: 10px 15px 5px 15px;
+  }
+
+#submgmt .checkbox-option {
+  font-weight: 400;  
+  cursor: pointer;
+}  
+
+
+/* Fields
+   ================================== */
+
+#submgmt input[type="text"],
+#submgmt select, #submgmt textarea {
+	padding: 0.1rem 0.5rem 0rem;	
+	border-color: rgba(0, 0, 0, 0.2);
+	border-style: solid;
+	border-width: 1px 1px 1px 6px; 
+	box-shadow: none;
+	background-color: #ffffff;
+	height: 30px;  /*2.3125 */
+} 
+
+#submgmt textarea {    
+  min-height: 100px;
+}
+
+#submgmt input[type="text"]:focus,
+#submgmt textarea:focus {  
+  border-color: rgba(0, 0, 0, 0.2);   
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2) inset;
+  background-color: #ffffff;
+}
+
+
+/* Submit Button
+   ================================== */
+
+#submgmt input[type="submit"] {
+	border-color: #4f9231;
+	border-style: solid;
+	border-width: 0px 0px 2px; 
+  background-color: #69af3f;
+  color: #ffffff;
+  cursor: pointer; 
+  white-space: normal; 
+  width: 100%; 
+  word-break: normal;
+  word-wrap: break-word;
+	margin: 20px 0px;
+	padding: 15px 10px;
+
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+
+#submgmt input[type=submit]:hover, #submgmt input[type=submit]:focus {
+  background-color: #2d2d2d;
+  cursor: pointer;
+} 
+
+
+/* Legal Statement
+   ================================== */
+ 
+#privacy-statement {
+  padding: 10px;
+  background-color: #ffffff;  
+}
+
+  #privacy-statement-checkbox {
+    clear: both;
+    display: inline;
+    margin-right: 5px; 
+  }
+ 
+#submgmt #legalCheckbox { margin: 0px 5px 0px 0px; }
+
+.privacy-statement {
+  color: #555555 !important; 
+  font-family: Arial, sans-serif !important;
+  font-size:  11px !important;  
+} 
+
+/* Form Validation
+   ================================== */
+#privacy-statement .LV_invalid {
+  color: #CC0000;
+  display: inline; /* Reset styling for Legal Statement */
+  font-size: 0.625em;
+  margin-left: 0%; /* Reset styling for Legal Statement */
+  padding-left: 0px; /* Reset styling for Legal Statement */ 
+}
+
+#submgmt .LV_invalid {
+  color: #CC0000;
+  display: block; /* Push validation message under form input */
+  font-size: 0.625em;
+  font-weight: bold;
+  margin-left: 0%; /* Match indent for form inputs */
+  padding-left: 0px; /* Match indent for form inputs */ 
+}
+  
+#submgmt .LV_valid {
+  color: #00CC00;
+  display: none; 
+}
+  
+#submgmt .LV_validation_message { font-family: Arial, sans-serif; }
+ 
+#submgmt .LV_valid_field, #submgmt .LV_invalid_field {
+  border-top: 1px solid rgba(0, 0, 0, 0.2) !important; 
+  border-right: 1px solid rgba(0, 0, 0, 0.2) !important; 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important; 
+}
+
+#submgmt .LV_valid_field,
+input.LV_valid_field:hover, 
+input.LV_valid_field:active,
+textarea.LV_valid_field:hover, 
+textarea.LV_valid_field:active {    
+  border-left: 6px solid #00CC00 !important;    
+}
+    
+#submgmt .LV_invalid_field, 
+input.LV_invalid_field:hover, 
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover, 
+textarea.LV_invalid_field:active {    
+  border-left: 6px solid #CC0000 !important;
+}
+
+

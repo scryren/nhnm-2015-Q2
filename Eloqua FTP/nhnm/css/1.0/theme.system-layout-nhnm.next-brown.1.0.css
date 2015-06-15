@@ -1,0 +1,393 @@
+/* 
+* Theme Name: System Layout - NEXT - Brown
+* Child Theme: NEXT Forecast
+* Version: 1.0 (Q1 2015)
+* Last Updated: 1/12/2015
+* Author: Penton, Inc.
+* URL: http://www.penton.com
+* Description: Branding for NEXT Forecast. Contains hero image, colors and typography.
+*/
+
+/* ==========================================================================
+   @IMPORT
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700,700italic);
+
+/* ==========================================================================
+   LAYOUT
+   ========================================================================== */
+
+
+/* Links
+   ================================== */
+
+a:link, a:visited {color: #F6861F;}
+  
+  a:hover, a:focus {color: rgba(246, 134, 31, 0.6);} 
+
+
+footer a:link, footer a:visited {color: rgba(255, 255, 255, 0.5);}
+footer a:hover, footer a:focus {color: rgba(255, 255, 255, 0.8);} 
+
+	 
+/* Images
+   ================================== */
+
+#hero {
+  background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{38aec70b-9459-4ae6-ace4-67a4e84403ce}_NXTF_HDR_nnnnBrown_1920x1200.jpg");   
+}
+
+img.bordered {
+  border: 5px solid #333333;
+}
+
+
+/* Background-color
+   ================================== */
+
+footer { background-color: #222222; }
+  footer .row { background-color: #222222; }
+
+form {background-color: ; }
+
+#banner-top { background-color: #222222;}
+  #banner-top .row { background-color: #222222; }
+
+#banner-bottom { background-color: #222222;}
+  #banner-bottom .row { background-color: transparent; }
+
+#content { background-color: #ffffff; }
+  #content .row { background-color: #ffffff; }  
+
+#form-wrapper  {
+  background-color: #f7f7f7; 
+  border: 1px solid #dddddd; 
+} 
+
+  #form-wrapper .columns {background-color: #f7f7f7; }
+
+#hero { background-color: #3C2415; }
+
+.divider { background-color: #69af3f; }
+  .divider .row { background-color: #69af3f; }
+
+
+
+/* Social Media Icons + Font Awesome
+   ================================== */
+/* Design from http://codepen.io/graygilmore/pen/oclvb */
+
+
+.social-media a {
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  font-size: 13px;  
+  line-height: 30px;  
+}
+
+  .social-media a:before {  
+    color: #ffffff;
+    font-family: 'FontAwesome';
+    font-size: 14px;
+    line-height: 30px; 
+  }
+
+.share-count {
+   color: #ffffff;
+}
+ 
+ 
+/* ==========================================================================
+   TYPE
+   ========================================================================== */
+
+
+
+/* Headers
+   ================================== */
+
+h1 { 
+  color: #333333;
+  font-size: 3em; 
+  line-height: 1.125em; 
+  font-family: Roboto, Arial, sans-serif; 
+  font-weight: bold;  
+}
+
+  header h1  {
+    color: #ffffff;      
+  }
+
+h2 { 
+  color: #333333;
+  font-size: 2em; 
+  line-height: 1.25em; 
+  font-family: 'Roboto Slab', Arial, sans-serif; 
+  font-weight: bold;
+}
+
+h3 { 
+  color: #69af3f;
+  font-size: 1.5em; 
+  line-height: 1.25em;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 700;
+}
+    
+	#submgmt h3 { 
+		color: #333333;
+		font-size: 1.5em; 
+		line-height: 1.25em;
+		font-family: Roboto, Arial, sans-serif;
+		font-weight: 700;
+	}		
+		
+h4 { 
+  color: #333333;
+  font-size: 1.125em; 
+  line-height: 1.25em;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+}
+
+  #submgmt h4 { 
+    color: #333333;
+    font-size: 1.125em; 
+    line-height: 1.25em;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-weight: 400;
+  }   
+
+h5 { font-size: .83em; }
+h6 { font-size: .67em; }
+
+
+/* Footer
+   ================================== */
+
+footer {  
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 0.625em;
+  font-weight: bold;
+  line-height: 1.125em; 
+}
+ 
+  footer a {        
+    font-family: Roboto, Arial, sans-serif;    
+    font-weight: bold;    
+    text-decoration: underline; 
+  }
+ 
+.copyrightNoticeText { }
+
+
+/* Paragraph
+   ================================== */
+
+p {
+  color: #555555;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: normal; 
+
+}
+
+  header p {
+    color: #ffffff;
+    font-size: 1.25em; 
+    line-height: 1.25em;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 700;
+  }
+ 
+/* Lists
+   ================================== */
+
+ul, li {
+	color: #555555;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: normal; 	
+}
+ 
+/* Newsletter
+   ================================== */
+
+.newsletter-description {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: normal;
+}
+ 
+.newsletter-name {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1.125em;
+  font-weight: 600; 
+} 
+ 
+.newsletter-subheader {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: 700;
+  margin: 10px 0px 0px 0px;
+  padding: 0px 0px 0px 0px; 
+}
+
+
+/* ==========================================================================
+   FORM
+   ========================================================================== */
+
+/* Legal Statement
+   ================================== */
+
+.privacy-statement {
+  color: #555555 !important; 
+  font-family: Roboto, Arial, sans-serif !important;
+  font-size:  11px !important;  
+} 
+
+
+/* Form Validation
+   ================================== */
+
+#privacy-statement .LV_invalid {
+  color: #CC0000;
+  font-size: 0.625em;
+}
+
+.LV_invalid {
+  font-size: 0.625em;
+  font-weight: bold;
+}
+  
+.LV_valid {
+  color: #00CC00;
+}
+  
+.LV_validation_message { font-family: Roboto, Arial, sans-serif; }
+ 
+ 
+/* Labels
+   ================================== */
+
+input[type="text"],
+select {
+  font-size: 13px; /*0.813em */
+  height: 30px;  /*2.3125 */ 
+  border-color: #dddddd; 
+} 
+
+
+#submgmt .checkbox-option {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+ 
+#submgmt label {
+  color: #7e7e7e;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+ 
+  #submgmt label.instructions {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: normal;   
+  }
+ 
+  #submgmt label.optional {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: normal;   
+  }
+
+  #submgmt label.prefix,
+  #submgmt label.postfix {
+    font-size: 0.875em;
+    font-weight: normal;
+    line-height: 2.3125rem;    
+  }
+
+  #submgmt label.required {
+    color: #c82525;
+    font-size: 0.500em;
+    font-weight: normal; 
+  }
+ 
+ 
+/* Fields
+   ================================== */
+
+#submgmt select {
+  background-color: #ffffff;
+}
+
+
+/* Submit Button */
+#submgmt input[type="submit"] {
+  background-color: #3C2415 !important; 
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+  border: 1px solid #3C2415 !important; 
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -webkit-border-radius: 3px;  
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset;
+  color: #ffffff !important;    
+  font-family: Roboto, Arial, sans-serif !important;  
+  font-size: 1.000em;
+  font-weight: 400;  
+}
+
+
+/* #submgmt input[type=submit]:hover, #submgmt input[type=submit]:focus {
+  background-color: #4d842b !important; 
+  border: 1px solid #4d842b !important; 
+} */
+
+
+/* ==========================================================================
+   @MEDIA
+   ========================================================================== */
+
+/* Small | Mobile (Max 640px)
+   ================================== */
+
+@media (max-width: 40em) { 
+
+  #hero {
+    background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{d7e62c52-5215-481f-8654-4725ba419dd0}_NXTF_HDR_nnnnBrown_640x800.jpg"); 
+  }
+
+}
+
+/* Medium | Tablet (641px - 1024px)
+   ================================== */
+   
+@media (min-width: 40.063em) and (max-width: 64em) { 
+
+  #hero {
+    background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{eb4e04ca-a176-4b95-a570-adee5c457c93}_NXTF_HDR_nnnnBrown_1024x800.jpg"); 
+  }
+}
+
+/* Large | LQ Desktop (1025px - 1440px)
+   ================================== */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { }
+
+/* XLarge | HQ Desktop (1441px - 1920px)
+   ================================== */
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { }
+
+/* XXLarge | Apple Thunderbolt (1921px+)
+   ================================== */
+@media only screen and (min-width: 120.063em) { }
+

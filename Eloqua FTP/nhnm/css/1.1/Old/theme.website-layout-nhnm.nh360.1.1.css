@@ -1,0 +1,22 @@
+/* 
+* Theme Name: Website Layout - NH360
+* Child Theme: Newhope360
+* Version: 1.1 (Q1 2015)
+* Last Updated: 2/4/2015
+* Author: Penton, Inc.
+* URL: http://www.penton.com
+* Description: Newhope360 branding for website forms.
+*/
+
+/* Submit Button */
+#submgmt input[type="submit"] {
+  background-color: #2992a4;
+  border-bottom: 2px solid #146472 !important; 
+  color: #ffffff; 
+  font-family: Roboto, Arial, sans-serif !important;  
+  font-weight: 600;  
+}
+
+#submgmt input[type=submit]:hover, #submgmt input[type=submit]:focus {
+  background-color: #207988;
+} 

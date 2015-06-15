@@ -1,0 +1,398 @@
+/* 
+* Theme Name: Forms - NHNM
+* Child Theme: Pisces Interstitial
+* Version: 1.1 (Q1 2015)
+* Last Updated: 05/22/2015
+* Author: Penton, Inc.
+* URL: http://www.penton.com
+*/
+
+/* ==========================================================================
+   LAYOUT
+   ========================================================================== */
+
+/* Structure
+   ================================== */
+
+  #eloqua-form-container .row,
+  #eloqua-form-container .columns  {
+    /* Clear indent for nested rows */
+    padding: 0px;
+    margin: 0px;
+  } 
+
+/* Background-color
+   ================================== */
+
+  #eloqua-form {
+    background-color: #ffffff;
+  } 
+
+  #eloqua-form .columns {
+    background-color: transparent;
+  }
+
+
+/* Headers
+   ================================== */
+
+h3 { 
+  color: #444444;
+  font-size: 1.5em; 
+  line-height: 1.25em;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+  #eloqua-form h3 { 
+    color: #444444;
+    font-family: 'Roboto Condensed', Georgia, serif;
+    text-align: center; 
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3); 
+    margin-top: 25px;  
+    border-bottom: 1px dashed #aaaaaa;
+    padding-bottom: 5px;
+  }  
+  
+h4 { 
+  color: #444444;
+  font-size: 1.25em; 
+  line-height: 1.25em;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+  #eloqua-form h4 { 
+    color: #444444;
+    font-size: 1.125em; 
+    line-height: 1.25em;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-weight: bold;
+  }   
+
+  /* Newsletter
+   ================================== */
+
+#submgmt .newsletter-description {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: normal;
+}
+ 
+#submgmt .newsletter-name {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1.125em;
+  font-weight: 600; 
+} 
+ 
+#submgmt .newsletter-subheader {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: 700;
+  margin: 10px 0px 0px 0px;
+  padding: 0px 0px 0px 0px; 
+}
+
+
+/* ==========================================================================
+   FORM
+   ========================================================================== */
+
+/* Link Transition 
+   ================================== */
+
+#submgmt input[type="submit"] {
+  transition: background .2s ease-out;
+  -moz-transition: background .2s ease-out;
+  -webkit-transition: background .2s ease-out;
+  -o-transition: background .2s ease-out; 
+}
+
+#submgmt input[type=submit]:hover, #submgmt input[type=submit]:focus {
+  transition: background .2s ease-out;
+  -moz-transition: background .2s ease-out;
+  -webkit-transition: background .2s ease-out;
+  -o-transition: background .2s ease-out;  
+} 
+
+/* Show/Hide Form Fields
+   ================================== */
+
+#submgmt .hide { display:none; } 
+#submgmt .show { display:visible; }
+ 
+/* Labels
+   ================================== */
+
+/* Clear Foundation Margins */
+input[type="checkbox"],
+input[type="color"], 
+input[type="date"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="email"], 
+input[type="file"],
+input[type="month"], 
+input[type="number"], 
+input[type="password"], 
+input[type="radio"],
+input[type="search"], 
+input[type="tel"], 
+input[type="text"], 
+input[type="time"], 
+input[type="url"], 
+input[type="week"], 
+textarea,
+select {
+  margin: 0px; 
+}
+
+
+#submgmt label {
+/*  background-color: #dddddd;  */
+  border-bottom: 0px solid #bfbfbf;
+  border-left: 0px solid #bfbfbf;
+  border-right: 0px solid #bfbfbf;
+  border-top: 0px solid #bfbfbf;
+  color: #6e6e6e;  
+  cursor: auto;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+  padding: 10px 10px 3px 0px;
+
+  border-radius: 6px 6px 0px 0px;
+  -moz-border-radius: 6px 6px 0px 0px;
+  -khtml-border-radius: 6px 6px 0px 0px;
+  -webkit-border-radius: 6px 6px 0px 0px;
+}
+ 
+  #submgmt label.instructions {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    margin-top: 0px;     
+    padding: 0px;     
+    border: 0px;     
+  }
+ 
+  #submgmt label.optional {
+    border: 0px;
+    display: inline;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    margin-top: 0px;     
+    padding: 0px;     
+    vertical-align: text-bottom;
+  }
+
+  #submgmt label.checkbox-single, #submgmt label.checkbox-multiple {
+    background-color: transparent;  
+    border: 0px;  
+    margin-top: 0px;
+    padding: 10px 15px 0px 15px;
+  }
+ 
+ 
+/* Fields
+   ================================== */
+
+#submgmt input[type="text"],
+#submgmt select {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 6px solid #bfbfbf;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: none;
+  color: #777777;
+  font-size: 13px; /*0.813em */
+  height: 30px;  /*2.3125 */
+  padding-bottom: 0.0rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.1rem;
+
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  -webkit-border-radius: 0px; 
+} 
+
+#submgmt input[type="text"]:focus,
+#submgmt textarea:focus {
+  box-shadow: 0 0 5px #999999;
+  border-color: rgba(0, 0, 0, 0.2); 
+}
+
+
+#submgmt select {
+  background-color: #ffffff;
+}
+
+
+#submgmt textarea {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: none;
+  min-height: 100px;
+  color: #777777;
+}
+
+#submgmt input[type="text"]:focus,
+#submgmt textarea:focus {
+  box-shadow: 0 0 5px #999999;
+  border-color: rgba(0, 0, 0, 0.2); 
+}
+
+/*
+#submgmt .checkbox-radio-container {background-color: #ffffff;}
+  #submgmt .checkbox-radio-container label {color: #777777;}
+  #submgmt .checkbox-radio-container-outer {border-bottom: 1px solid rgba(0, 0, 0, 0.1);}*/ /* Pisces only */
+
+#submgmt .checkbox-option {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  padding-left: 5px; 
+  cursor: pointer;
+}
+
+
+/* Submit Button
+   ================================== */
+
+#submgmt input[type="submit"] {
+  background-color: #424242;
+  border-top: 0px solid #222222 !important; 
+  border-right: 0px solid #222222 !important; 
+  border-bottom: 2px solid #222222 !important; 
+  border-left: 0px solid #222222 !important; 
+  color: #ffffff;
+  cursor: pointer; 
+  font-family: Roboto, Arial, sans-serif !important;  
+  font-size: 1.000em;
+  font-weight: 400;  
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  white-space: normal; 
+  width: 100%; 
+  word-break: normal;
+  word-wrap: break-word;
+
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+
+#submgmt input[type=submit]:hover, #submgmt input[type=submit]:focus {
+  background-color: #2d2d2d;
+  cursor: pointer;
+} 
+
+/* Legal Statement
+   ================================== */
+ 
+#privacy-statement {
+  padding: 10px;
+  background-color: #ffffff;  
+}
+
+  #privacy-statement-checkbox {
+    clear: both;
+    display: inline;
+    margin-right: 5px; 
+  }
+ 
+#submgmt #legalCheckbox { margin: 0px 5px 0px 0px; }
+
+.privacy-statement {
+  color: #555555 !important; 
+  font-family: Arial, sans-serif !important;
+  font-size:  11px !important;  
+} 
+
+/* Form Validation
+   ================================== */
+#privacy-statement .LV_invalid {
+  color: #CC0000;
+  display: inline; /* Reset styling for Legal Statement */
+  font-size: 0.625em;
+  margin-left: 0%; /* Reset styling for Legal Statement */
+  padding-left: 0px; /* Reset styling for Legal Statement */ 
+}
+
+#submgmt .LV_invalid {
+  color: #CC0000;
+  display: block; /* Push validation message under form input */
+  font-size: 0.625em;
+  font-weight: bold;
+  margin-left: 0%; /* Match indent for form inputs */
+  padding-left: 0px; /* Match indent for form inputs */ 
+}
+  
+#submgmt .LV_valid {
+  color: #00CC00;
+  display: none; 
+}
+  
+#submgmt .LV_validation_message { font-family: Arial, sans-serif; }
+ 
+#submgmt .LV_valid_field, #submgmt .LV_invalid_field {
+  border-top: 1px solid rgba(0, 0, 0, 0.2) !important; 
+  border-right: 1px solid rgba(0, 0, 0, 0.2) !important; 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important; 
+}
+
+#submgmt .LV_valid_field,
+input.LV_valid_field:hover, 
+input.LV_valid_field:active,
+textarea.LV_valid_field:hover, 
+textarea.LV_valid_field:active {    
+  border-left: 6px solid #00CC00 !important;    
+}
+    
+#submgmt .LV_invalid_field, 
+input.LV_invalid_field:hover, 
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover, 
+textarea.LV_invalid_field:active {    
+  border-left: 6px solid #CC0000 !important;
+}
+
+
+
+
+
+/* ==========================================================================
+   @MEDIA
+   ========================================================================== */
+
+/* Small | Mobile (Max 640px)
+   ================================== */
+
+@media (max-width: 40em) { }
+
+/* Medium | Tablet (641px - 1024px)
+   ================================== */
+@media (min-width: 40.063em) and (max-width: 64em) { }
+
+/* Large | LQ Desktop (1025px - 1440px)
+   ================================== */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { }
+
+/* XLarge | HQ Desktop (1441px - 1920px)
+   ================================== */
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { }
+
+/* XXLarge | Apple Thunderbolt (1921px+)
+   ================================== */
+@media only screen and (min-width: 120.063em) { }

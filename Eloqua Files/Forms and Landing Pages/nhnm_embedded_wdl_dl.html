@@ -1,0 +1,570 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Delicious Living</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
+
+    <script src="http://assets.penton.com/eloqua_site/nhnm/lib/foundation/js/foundation/foundation.js" type="text/javascript"></script>
+    <link href="http://assets.penton.com/eloqua_site/nhnm/lib/foundation/css/foundation.css" rel="stylesheet" type="text/css" />
+
+    <script src="http://assets.penton.com/eloqua_site/nhnm/js/jquery.generic-form-error-notification.js" type="text/javascript"></script>
+    <script src="http://assets.penton.com/eloqua_site/nhnm/js/jquery.privacy-statement-nhnm.js" type="text/javascript"></script>
+    <script src="http://assets.penton.com/eloqua_site/nhnm/js/jquery.querystring.pr_form.js" type="text/javascript"></script>
+
+    <!--Scripts and Stylesheets-->  
+    <link href="http://assets.penton.com/eloqua_site/nhnm/css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="http://assets.penton.com/eloqua_site/nhnm/css/2.0/nhnm_page_dl_2.0.css" rel="stylesheet" type="text/css" />
+    <link href="http://assets.penton.com/eloqua_site/nhnm/css/2.0/nhnm_form_dl_2.0.css" rel="stylesheet" type="text/css" />
+
+
+    <!--START FORM IDS-->
+<script type="text/javascript">
+  var LookupIdVisitor = "1672eb62c210426e9f1ca07532462ed2"; // LOOKUP A:  The ID of your Visitor Web Data Lookup (NH360 - Form PrePop Cookie Lookup)
+  var LookupIdPrimary = "6d17509026904e7095daee45e0251778"; // LOOKUP B:  The ID of your Contact/Datacard/Prospect/Company Web Data Lookup (NH360 - Form PrePop Contact Lookup)
+  var VisitorUniqueField = "V_ElqEmailAddress"; // Unique field's HTML Name from LOOKUP A (usually V_Email_Address)
+  var PrimaryUniqueField = "C_EmailAddress"; // Unique field's HTML Name from LOOKUP B (usually C_EmailAddress)
+  var EloquaFormID = "submgmt"; // The ID of your Eloqua Form   
+</script> 
+<!--END FORM IDS-->
+    <!--START ELOQUA TRACKING CODE-->
+<script type="text/javascript">
+
+	var EloquaSiteID = "2130"; // The Site ID of your Eloqua Instance
+	var EloquaScript = "http://img.en25.com/i/elqCfg.min.js"; // Path to elqCfg.min.js
+
+    var _elqQ = _elqQ || [];
+    _elqQ.push(['elqSetSiteId', EloquaSiteID]);
+    _elqQ.push(['elqTrackPageView']);
+
+    (function () {
+      function async_load() {
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+        s.src = EloquaScript;
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+      }
+      if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);
+      else if (window.attachEvent) window.attachEvent('onload', async_load);
+    })();
+	
+</script>			
+<!--END ELOQUA TRACKING CODE-->   
+    <!--START FORM FUCNTIONS-->   
+<script type="text/javascript">
+
+    function LoadFields(FormID) {
+    
+      var container, inputs, index;
+      
+      // Get the Form element
+      container = document.getElementById(FormID);
+      
+      //'#yourFormHTMLName :input'
+      inputs = $('#submgmt :input');
+
+      // Loops through every INPUT on the form
+      for (index = 0; index < inputs.length; index++) {
+        var LookupID = inputs[index].id;
+        var LookupValue = GetElqContentPersonalizationValue(LookupID);
+        // This value is used for CHECK BOX value comparisons
+        var LowerCaseValue = LookupValue.toLowerCase();
+  
+        // deal with inputs[index] element.  Compare to LookupID and LookupValue.
+
+        // Form Field Prepopulation
+        if (inputs[index].id == LookupID) {
+          if (inputs[index].type == "checkbox") {
+            // Place code here for CHECKBOX Inputs
+            if (LowerCaseValue == "on") inputs[index].checked=true;
+            else if (LowerCaseValue == "true") inputs[index].checked=true;
+            else if (LowerCaseValue == "y") inputs[index].checked=true;
+            else if (LowerCaseValue == "yes") inputs[index].checked=true;
+            else if (LowerCaseValue == "checked") inputs[index].checked=true;
+            else if (LowerCaseValue == "1") inputs[index].checked=true;
+          } else if (inputs[index].type == "radio") {
+            // Place code here for RADIO BUTTON Inputs
+          } else if (inputs[index].type == "select-one") {
+        
+            $("#"+inputs[index].id).val(LookupValue).attr('selected', true).siblings('option').removeAttr('selected');
+            
+
+          } else if (inputs[index].type == "text") {
+            // Place code here for STANDARD TEXT Inputs
+            inputs[index].value = LookupValue;
+          } else {
+            // All Other Inputs = do nothing
+          } 
+        }
+      
+      }
+      
+        $("#"+inputs[index].id).selectmenu("refresh", true); 
+    }
+</script>     
+<!--END FORM FUCNTIONS-->   
+  
+<!--START DATA LOOKUPS-->
+<script type="text/javascript">
+
+  // SetElqContent is triggered by the Data Lookup Scripts automatically.  The "FirstLookup" modification allows for the Visitor Lookup to trigger the second Lookup (Contact/Datacard/Prospect/Company)
+  var FirstLookup = true;
+    function SetElqContent() {
+      if (FirstLookup) {
+      //LOOKUP B:  Eloqua Contact/DataCard/Prospect/Company Data Lookup from Email Address
+      _elqQ.push(['elqDataLookup', escape(LookupIdPrimary), '<' + PrimaryUniqueField +'>' + GetElqContentPersonalizationValue(VisitorUniqueField) + '</' + PrimaryUniqueField + '>']);
+      FirstLookup = false;
+    } else {
+      //This is triggered the after Lookup B fires.  LoadFields starts the field prepoulation process.
+      LoadFields(EloquaFormID);
+    }
+            
+  }
+
+  // LOOKUP A:  Eloqua Visitor Data Lookup from Cookie  -  Ensure VisitorUniqueField is pulled in the Profile View
+  _elqQ.push(['elqDataLookup', escape(LookupIdVisitor), '']);
+      
+</script>
+<!--END DATA LOOKUPS-->          
+
+    <style type="text/css">
+    /* Overrides */
+    </style>
+
+  </head>
+  <body>    
+
+    <section id="view-full-screen">
+	<div class="row">
+		<div class="small-12 text-center columns">			                      
+      <p>On a touchscreen? <a href="" target="_parent">View in full screen mode.</a></p>          			
+		</div>
+	</div>
+</section>
+
+
+    <section id="eloqua-form">
+      <div class="row form block">
+        <div class="small-12 columns">                
+          <div class="row">
+            <div class="small-12 medium-10 large-7 medium-centered columns">       
+              <!--START ELOQUA FORM CODE-->  
+<form method="post" name="submgmt" action="https://s2130.t.eloqua.com/e/f2" id="submgmt" target="_parent" class=""> 
+    <input value="DLTemplate" type="hidden" name="elqFormName">
+    <input value="2130" type="hidden" name="elqSiteId">
+    <input name="elqCampaignId" type="hidden">
+
+<h3>Your Contact Information</h3>
+
+<!--START Form Reset-->
+<p style="font-family: Arial, sans-serif; color: #555555; line-height: 18px; font-size: 12px;">Not you? <a href="javascript:document.getElementById('submgmt').reset();">Clear form fields</a>.</p>
+<!--END Form Reset-->
+
+<!--First Name-->      
+  <div class="row">
+    <div class="small-12 columns">
+      <label for="firstName">
+        First Name
+      </label>
+    </div>
+
+    <div class="small-12 columns">
+      <input id="C_FirstName" name="firstName" type="text" value="">
+    </div>
+
+  </div>
+
+<!--Email Address-->        
+  <div class="row">
+    <div class="small-12 columns">
+      <label for="emailAddress">
+        Email Address
+      </label>
+    </div>
+
+    <div class="small-12 columns">
+      <input id="C_EmailAddress" name="emailAddress" type="text" value="">
+    </div>
+
+  </div>      
+    
+<!--State or Province-->
+  <div class="row">
+    <div class="small-12 columns">
+      <label for="stateOrProvince">
+        State or Province
+      </label>
+    </div>
+  
+  <div class="small-12 columns">
+    <select id="C_State_Prov" name="stateOrProvince">
+      <option selected="selected" value="">Select One</option>                        
+      <option value="">- - - - - - - - -</option>
+      <option value="Outside US/Canada">Outside US/Canada</option>
+      <option value="">- - - - - - - - -</option>
+      <option value="AL">Alabama</option><option value="AK">Alaska</option>
+      <option value="AB">Alberta</option>
+      <option value="AS">American Samoa</option>
+      <option value="AZ">Arizona </option>
+      <option value="AR">Arkansas</option>
+      <option value="BC">British Columbia</option>
+      <option value="CA">California </option>
+      <option value="CO">Colorado </option>
+      <option value="CT">Connecticut</option>
+      <option value="DE">Delaware</option>
+      <option value="DC">District Of Columbia</option>
+      <option value="FM">Federated States Of Micronesia</option>
+      <option value="FL">Florida</option>
+      <option value="GA">Georgia</option>
+      <option value="GU">Guam </option>
+      <option value="HI">Hawaii</option>
+      <option value="ID">Idaho</option>
+      <option value="IL">Illinois</option>
+      <option value="IN">Indiana</option>
+      <option value="IA">Iowa</option>
+      <option value="KS">Kansas</option>
+      <option value="KY">Kentucky</option>
+      <option value="LA">Louisiana</option>
+      <option value="ME">Maine</option>
+      <option value="MB">Manitoba</option>
+      <option value="MH">Marshall Islands</option>
+      <option value="MD">Maryland</option>
+      <option value="MA">Massachusetts</option>
+      <option value="MI">Michigan</option>
+      <option value="MN">Minnesota</option>
+      <option value="MS">Mississippi</option>
+      <option value="MO">Missouri</option>
+      <option value="MT">Montana</option>
+      <option value="NE">Nebraska</option>
+      <option value="NV">Nevada</option>
+      <option value="NB">New Brunswick</option>
+      <option value="NH">New Hampshire</option>
+      <option value="NJ">New Jersey</option>
+      <option value="NM">New Mexico</option>
+      <option value="NY">New York</option>
+      <option value="NL">Newfoundland and Labrador</option>
+      <option value="NC">North Carolina</option>
+      <option value="ND">North Dakota</option>
+      <option value="MP">Northern Mariana Islands</option>
+      <option value="NT">Northwest Territories</option>
+      <option value="NS">Nova Scotia</option>
+      <option value="NU">Nunavut</option>
+      <option value="OH">Ohio</option>
+      <option value="OK">Oklahoma</option>
+      <option value="ON">Ontario</option>
+      <option value="OR">Oregon</option>
+      <option value="PW">Palau</option>
+      <option value="PA">Pennsylvania</option>
+      <option value="PE">Prince Edward Island</option>
+      <option value="PR">Puerto Rico</option>
+      <option value="QC">Quebec</option>
+      <option value="RI">Rhode Island</option>
+      <option value="SK">Saskatchewan</option>
+      <option value="SC">South Carolina</option>
+      <option value="SD">South Dakota</option>
+      <option value="TN">Tennessee</option>
+      <option value="TX">Texas</option>
+      <option value="UT">Utah</option>
+      <option value="VT">Vermont</option>
+      <option value="VI">Virgin Islands</option>
+      <option value="VA">Virginia </option>
+      <option value="WA">Washington</option>
+      <option value="WV">West Virginia</option>
+      <option value="WI">Wisconsin</option>
+      <option value="WY">Wyoming</option>
+      <option value="YT">Yukon</option>                       
+    </select>  
+    </div>
+    
+  </div>
+      
+
+<!--Gender-->
+  <div class="row">   
+    <div class="small-12 medium-12 columns">  
+    
+      <label for="gender">
+        Gender <label class="optional">(optional)</label> 
+      </label>
+
+    </div>
+
+    <div class="small-12 medium-12 columns">
+    
+      <select id="fieldGender" name="gender">
+                
+        <option selected="selected" value="">Select One</option>                               
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>        
+
+      </select>                                
+    </div>
+  </div>  
+
+<!--Age-->
+  <div class="row">   
+    <div class="small-12 medium-12 columns">  
+    
+      <label for="age">
+        Age <label class="optional">(optional)</label> 
+      </label>
+
+    </div>
+
+    <div class="small-12 medium-12 columns">
+    
+      <select id="fieldAge" name="age">
+                
+        <option selected="selected" value="">Select One</option>                               
+        <option value="Under 18" >Under 18</option>
+        <option value="18-24" >18-24</option>
+        <option value="25-34" >25-34</option>
+        <option value="35-44" >35-44</option>
+        <option value="45-54" >45-54</option>
+        <option value="55-64" >55-64</option>
+        <option value="65+" >65+</option>
+
+      </select>                                
+    </div>
+  </div>   
+
+<h3>Custom Questions</h3>
+  
+<!--CUSTOM QUESTION SINGLE PICK LIST-->
+  <div class="row">   
+    <div class="small-12 medium-12 columns">  
+    
+        <label for="HTMLNAMEFORTHISFIELD">
+          Placeholder Pick List Label 
+        </label>
+
+    </div>
+
+    <div class="small-12 medium-12 columns">
+    
+      <select id="fieldCustomQuestion01" name="HTMLNAMEFORTHISFIELD">
+                
+        <option selected="selected" value="">Select One</option>                               
+        <option value="INSERTVALUE">INSERTVALUE</option>
+        <option value="INSERTVALUE">INSERTVALUE</option>
+        <option value="INSERTVALUE">INSERTVALUE</option>
+
+      </select>                                
+    </div>
+  </div>   
+
+
+<!--CUSTOM QUESTION TEXT FIELD-->
+  <div class="row">     
+    <div class="small-12 medium-12 columns">  
+    
+      <label for="HTMLNAMEFORTHISFIELD">
+        Placeholder Text Field
+      </label>
+
+    </div>
+
+    <div class="small-12 medium-12 columns">
+                                
+    <input id="fieldCustomQuestion02" name="HTMLNAMEFORTHISFIELD" type="text" value="">
+    
+    </div>
+  </div>  
+
+<!--CUSTOM QUESTION PARAGRAPH FIELD-->
+  <div class="row">     
+    <div class="small-12 medium-12 columns">  
+    
+      <label for="HTMLNAMEFORTHISFIELD">
+        Placeholder Textarea
+        <label class="instructions">&#9733; Please keep responses under 2,000 characters (including white spaces).</label>
+      </label>
+
+    </div>
+
+    <div class="small-12 medium-12 columns">                          
+    <textarea id="fieldCustomQuestion03" name="HTMLNAMEFORTHISFIELD"></textarea>
+    
+    </div>
+  </div> 
+
+<!--CUSTOM QUESTION MULTIPLE CHECKBOXES-->
+  <div class="row">     
+    
+    <div class="small-12 medium-12 columns">
+        <label for="HTMLNAMEFORTHISFIELD">
+           Insert long label with a maximum of 100 characters w/ spaces here.
+           <label class="optional">(optional)</label>           
+          <label class="instructions">&#9733; Check all that apply.</label>
+        </label>
+    </div>
+
+    <div class="small-12 medium-12 checkbox-radio-container columns">
+      <label class="checkbox-multiple">
+        <input name="HTMLNAMEFORTHISFIELD" type="checkbox" value="CHANGEMEOPTION01">     
+        <span class="checkbox-option">
+          CHANGEMEOPTION01
+        </span>
+      </label>
+    </div>
+
+    <div class="small-12 medium-12 checkbox-radio-container columns">
+      <label class="checkbox-multiple">
+        <input name="HTMLNAMEFORTHISFIELD" type="checkbox" value="CHANGEMEOPTION02">     
+        <span class="checkbox-option">
+          CHANGEMEOPTION02
+        </span>
+      </label>
+    </div> 
+
+    <div class="small-12 medium-12 checkbox-radio-container columns">
+      <label class="checkbox-multiple">
+        <input name="HTMLNAMEFORTHISFIELD" type="checkbox" value="CHANGEMEOPTION03">     
+        <span class="checkbox-option">
+          CHANGEMEOPTION03
+        </span>
+      </label>
+    </div>
+    
+    <div class="small-12 medium-12 checkbox-radio-container columns">
+      <label class="checkbox-multiple">
+        <input name="HTMLNAMEFORTHISFIELD" type="checkbox" value="CHANGEMEOPTION04">     
+        <span class="checkbox-option">
+          CHANGEMEOPTION04
+        </span>
+      </label>
+    </div>       
+  
+  </div>    
+   
+  
+  
+<label>Subscribe to our newsletters <label class="optional">(optional)</label></label>
+<!--CUSTOM QUESTION SINGLE CHECKBOX-->
+  <div class="row">     
+    <div class="small-12 medium-12 checkbox-radio-container columns">  
+
+      <label class="checkbox-single">
+        <input name="HTMLNAMEFORTHISFIELD" type="checkbox" value="on">
+        <span class="checkbox-option">
+          NEWSLETTER NAME.          
+        </span>
+      </label>
+        
+    </div>
+  </div>     
+
+<!--Partner Reference (Entry URL)-->
+  <div class="row" style="display: none;">     
+    <div class="small-12 medium-12 columns">  
+    
+      <label for="partnerref">
+        Partner Reference (Entry URL)
+      </label>
+
+    </div>
+
+    <div class="small-12 medium-12 columns">
+                                
+    <input id="myPartnerRef" name="partnerref" type="text" value="">
+    
+    </div>
+  </div>  
+           
+<!--SUBMIT BUTTON-->       
+  <div class="row">
+    <div class="small-12 small-text-center columns">    
+          <input name="submgmt" type="submit" value="Download">
+    </div>
+  </div>
+
+
+<!--GENERIC FORM ERROR NOTIFICATION-->        
+  <div class="row">
+    <div class="small-12 columns">  
+  
+      <div id="generic-form-error-notification"></div>
+  
+    </div>
+  </div>  
+      
+            
+<!--LEGAL STATEMENT-->        
+  <div class="row">
+    <div class="small-12 columns">  
+  
+      <div id="privacy-statement"><h4>Terms of Service</h4></div>
+  
+    </div>
+  </div>
+  
+</form>
+
+<!--START Form Validation Code-->  
+<script src="https://img.en25.com/i/livevalidation_standalone.compressed.js" type="text/javascript"></script>
+
+<style type="text/css" media="screen">
+  .LV_validation_message{font-family: Arial, sans-serif; }
+  .LV_valid{ color:#00CC00; display:none; }
+  .LV_invalid{color:#CC0000; font-size:10px;}
+  .LV_valid_field, input.LV_valid_field:hover, input.LV_valid_field:active, textarea.LV_valid_field:hover, textarea.LV_valid_field:active { border: 1px solid #00CC00; }
+  .LV_invalid_field, input.LV_invalid_field:hover, input.LV_invalid_field:active, textarea.LV_invalid_field:hover, textarea.LV_invalid_field:active { border: 1px solid #CC0000; }
+</style>
+
+<script type="text/javascript">
+
+   var fieldFirstName = new LiveValidation("C_FirstName", {validMessage: "", onlyOnBlur: true});fieldFirstName.add(Validate.Presence, {failureMessage:"This field is required"});
+
+    var fieldEmailAddress = new LiveValidation("C_EmailAddress", {validMessage: "", onlyOnBlur: true});fieldEmailAddress.add(Validate.Presence, {failureMessage:"This field is required"});fieldEmailAddress.add(Validate.Format, {pattern: /^[ ]*([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})[ ]*$/i, failureMessage: "A valid email address is required"});
+
+    var fieldStateOrProvince = new LiveValidation("C_State_Prov", {validMessage: "", onlyOnBlur: true});fieldStateOrProvince.add(Validate.Presence, {failureMessage:"This field is required"});
+
+    
+    /* CUSTOM QUESTION VALIDATION */
+    var fieldCustomQuestion01 = new LiveValidation("fieldCustomQuestion01", {validMessage: "", onlyOnBlur: true});fieldCustomQuestion01.add(Validate.Presence, {failureMessage:"This field is required"});  
+
+    var fieldCustomQuestion02 = new LiveValidation("fieldCustomQuestion02", {validMessage: "", onlyOnBlur: true});fieldCustomQuestion02.add(Validate.Presence, {failureMessage:"This field is required"});  
+    
+    var fieldCustomQuestion03 = new LiveValidation("fieldCustomQuestion03", {validMessage: "", onlyOnBlur: true});fieldCustomQuestion03.add(Validate.Presence, {failureMessage:"This field is required"});  
+    
+    var fieldCustomQuestion04 = new LiveValidation("fieldCustomQuestion04", {validMessage: "", onlyOnBlur: true});fieldCustomQuestion04.add(Validate.Presence, {failureMessage:"This field is required"});  
+    
+    
+</script>
+<!--END Form Validation Code-->  
+<!--END ELOQUA FORM CODE-->  
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+	<div class="row">
+		<div class="small-12 columns">
+			
+			<div class="row">
+
+				<div class="small-12 medium-6 medium-text-left small-text-center columns">
+					<a href="http://www.penton.com"><img src="http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{fa649af8-a6dd-479b-a16d-bf793a9133fd}_PEN_LOGO_colorPenton-2015Q1_262x100.png"></a>
+				</div>
+
+				<div id="copyright" class="small-12 medium-6 medium-text-right small-text-center columns">
+					<span elqid="336" elqtype="Section" class="remove-absolute" style="display: block"><span class="copyrightNoticeText">© 2015 <a href="http://www.penton.com?elqTrack=true">Penton</a>. All Rights Reserved.</span></span>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</footer> 
+
+  </body>
+</html>

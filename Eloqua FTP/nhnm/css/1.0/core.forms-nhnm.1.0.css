@@ -1,0 +1,251 @@
+/* 
+* Theme Name: Forms - NHNM
+* Child Theme: N/A
+* Version: 1.0 (Q1 2015)
+* Last Updated: 1/12/2015
+* Author: Penton, Inc.
+* URL: http://www.penton.com
+*/
+
+
+/* ==========================================================================
+   FORM
+   ========================================================================== */
+
+/* Show/Hide Form Fields
+   ================================== */
+
+#submgmt .hide { display:none; } 
+#submgmt .show { display:visible; }
+
+
+/* Legal Statement
+   ================================== */
+ 
+#privacy-statement-checkbox {
+  clear: both;
+  display: inline;
+  margin-right: 5px; 
+}
+ 
+#submgmt #legalCheckbox { margin: 0px 5px 0px 0px; }
+
+.privacy-statement {
+  color: #555555 !important; 
+  font-family: Arial, sans-serif !important;
+  font-size:  11px !important;  
+} 
+
+
+/* Form Validation
+   ================================== */
+
+#privacy-statement .LV_invalid {
+  color: #CC0000;
+  display: inline; /* Reset styling for Legal Statement */
+  font-size: 0.625em;
+  margin-left: 0%; /* Reset styling for Legal Statement */
+  padding-left: 0px; /* Reset styling for Legal Statement */ 
+}
+
+.LV_invalid {
+  display: block; /* Push validation message under form input */
+  font-size: 0.625em;
+  font-weight: bold;
+  margin-left: 0%; /* Match indent for form inputs */
+  padding-left: 0px; /* Match indent for form inputs */ 
+}
+  
+.LV_valid {
+  color: #00CC00;
+  display: none; 
+}
+  
+.LV_validation_message { font-family: Arial, sans-serif; }
+ 
+ 
+/* Labels
+   ================================== */
+
+/* Clear Foundation Margins */
+input[type="checkbox"],
+input[type="color"], 
+input[type="date"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="email"], 
+input[type="file"],
+input[type="month"], 
+input[type="number"], 
+input[type="password"], 
+input[type="radio"],
+input[type="search"], 
+input[type="tel"], 
+input[type="text"], 
+input[type="time"], 
+input[type="url"], 
+input[type="week"], 
+textarea,
+select {
+  margin: 0px; 
+
+}
+
+input[type="text"],
+select {
+  font-size: 13px; /*0.813em */
+  height: 30px;  /*2.3125 */
+  padding-top: 0.1rem;
+  padding-bottom: 0.0rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-color: #dddddd; 
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -webkit-border-radius: 3px;  
+} 
+
+
+#submgmt .checkbox-option {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  padding-left: 5px; 
+  cursor: pointer;
+}
+
+#submgmt .checkbox-multiple,
+#submgmt .checkbox-single {
+  padding: 0px 0px 5px 0px;  
+} 
+ 
+#submgmt label {
+  color: #7e7e7e;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 10px;
+  cursor: auto;
+}
+ 
+  #submgmt label.instructions {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: normal;    
+    padding-bottom: 10px; 
+    padding-top: 0px;
+  }
+ 
+  #submgmt label.optional {
+    display: inline;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: normal;    
+    padding-bottom: 10px; 
+    padding-top: 0px;
+    vertical-align: text-bottom;
+  }
+
+  #submgmt label.prefix,
+  #submgmt label.postfix {
+    font-size: 0.875em;
+    font-weight: normal;
+    padding: 0px 0px 0px 10px;    
+    text-align: left; 
+    height: 2.3125rem;
+    line-height: 2.3125rem;    
+  }
+
+  #submgmt label.required {
+    background-color: inherit;
+    color: #c82525;
+    display: inline;
+    font-size: 0.500em;
+    font-weight: normal; 
+    vertical-align: super;
+  }
+ 
+ 
+/* Fields
+   ================================== */
+
+#submgmt select {
+  background-color: #ffffff;
+}
+
+
+/* Submit Button */
+#submgmt input[type="submit"] {
+  background-color: #333333;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+  border: 1px solid #333333;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -webkit-border-radius: 3px;  
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset;
+  color: #ffffff; 
+  cursor: pointer; 
+  font-family: Arial, sans-serif; 
+  font-size: 1.000em;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 15px 10px 15px 10px;
+  /* transition: background 0.2s ease-out 0s; */
+  white-space: normal; 
+  width: 100%; 
+  word-break: normal;
+  word-wrap: break-word;  
+
+  opacity: 1.0; /* Change link hover opacity */
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+  transition: opacity .25s linear; /* Fade link hover */
+  -moz-transition: opacity .25s linear;
+  -webkit-transition: opacity .25s linear;
+  -o-transition: opacity .25s linear;  
+
+}
+
+
+#submgmt input[type=submit]:hover, #submgmt input[type=submit]:focus {
+ /*  background-color: #555555;
+  border: 1px solid #555555;
+  transition: background 0.2s ease-out 0s;*/
+  cursor: pointer;
+  opacity: 0.6; /* Change link hover opacity */
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  transition: opacity .25s linear; /* Fade link hover */
+  -moz-transition: opacity .25s linear;
+  -webkit-transition: opacity .25s linear;
+  -o-transition: opacity .25s linear;    
+} 
+
+
+
+/* ==========================================================================
+   @MEDIA
+   ========================================================================== */
+
+/* Small | Mobile (Max 640px)
+   ================================== */
+
+@media (max-width: 40em) { }
+
+/* Medium | Tablet (641px - 1024px)
+   ================================== */
+@media (min-width: 40.063em) and (max-width: 64em) { }
+
+/* Large | LQ Desktop (1025px - 1440px)
+   ================================== */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { }
+
+/* XLarge | HQ Desktop (1441px - 1920px)
+   ================================== */
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { }
+
+/* XXLarge | Apple Thunderbolt (1921px+)
+   ================================== */
+@media only screen and (min-width: 120.063em) { }

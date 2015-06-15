@@ -1,0 +1,426 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,900,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
+/* Foundation Grid Overrides
+   ================================== */
+.row-full-width {
+  width: 100%; }
+
+/* Layout
+   ================================== */
+body {
+  background-color: #eeeeee;
+  color: #555555;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.25em; }
+
+/* Small | Mobile (Max 640px)
+   ================================== */
+@media (max-width: 40em) {
+  body {
+    font-size: 90%; } }
+/* Medium | Tablet (641px - 1024px)
+   ================================== */
+@media (min-width: 40.063em) and (max-width: 64em) {
+  body {
+    font-size: 95%; } }
+/* Links
+   ================================== */
+a:link, a:visited {
+  color: #2d323e; }
+
+a:hover, a:focus {
+  color: rgba(45, 50, 62, 0.6); }
+
+footer a:link, footer a:visited {
+  color: #444444; }
+
+footer a:hover, footer a:focus {
+  color: #666666; }
+
+a:link,
+a:visited,
+a:hover,
+a:focus {
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+  text-decoration: underline; }
+
+img {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out; }
+
+a:hover img {
+  opacity: 0.8;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out; }
+
+#logo-link:link, #logo-link:visited {
+  background-color: rgba(238, 238, 238, 0);
+  -webkit-transition: background-color 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out;
+  -o-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out; }
+
+#logo-link:hover, #logo-link:focus {
+  background-color: rgba(238, 238, 238, 0.6);
+  -webkit-transition: background-color 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out;
+  -o-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out; }
+
+/* Font
+   ================================== */
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.5em; }
+
+h3 {
+  font-size: 1.17em; }
+
+h4 {
+  font-size: 1.12em; }
+
+h5 {
+  font-size: .83em; }
+
+h6 {
+  font-size: .75em; }
+
+/* Small | Mobile (Max 640px)
+   ================================== */
+@media (max-width: 40em) {
+  h1 {
+    font-size: 1.75em !important; }
+
+  h2 {
+    font-size: 1.50em !important; }
+
+  h3 {
+    font-size: 1.30em !important; }
+
+  h4 {
+    font-size: 1.125em; } }
+h1, h2 {
+  color: #69af3f;
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  font-weight: 700; }
+
+#submgmt.npc h2 {
+  font-weight: 300;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  padding-top: 25px; }
+
+#submgmt.npc h2:first-of-type {
+  padding-top: 0px; }
+
+#submgmt.npc h2:last-of-type {
+  border-top: 1px dotted #cccccc; }
+
+h3, h4, h5, h6 {
+  color: #444444;
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  font-weight: 700; }
+
+#submgmt.npc .checkbox h4 {
+  color: #555555;
+  display: inline;
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  padding-left: 10px;
+  text-align: left; }
+
+#page-heading h1 {
+  color: #ffffff;
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-align: center; }
+
+.subheader {
+  padding-bottom: 30px;
+  color: #69af3f;
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  font-weight: 300; }
+
+p {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 1em; }
+
+p .meta {
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  font-size: 115%;
+  display: block; }
+
+.meta.date {
+  font-weight: 700; }
+
+.meta.time {
+  font-weight: 300; }
+
+#submgmt.npc p {
+  padding-left: 27px;
+  font-size: 90%; }
+
+/* List
+   ================================== */
+ul, li {
+  font-size: 1em; }
+
+ul li {
+  padding-bottom: 1em; }
+
+/* Brand Logo
+   ================================== */
+#logo {
+  background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{8fcc0c07-5fb1-4f3b-9c26-e76dc4f4d45e}_NBJS_LOGO_colorNBJS-2015Q1_300x100.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: auto 50px;
+  height: 50px;
+  margin: 5px 5px 5px 0px; }
+
+#logo-link {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 225px;
+  height: 100%;
+  background-color: transparent; }
+
+/* Small | Mobile (Max 640px)
+   ================================== */
+@media (max-width: 40em) {
+  #logo {
+    background-position: top center; }
+
+  #logo-link {
+    width: 100%; } }
+/* Medium | Tablet (641px - 1024px)
+   ================================== */
+@media (min-width: 40.063em) and (max-width: 64em) {
+  #logo {
+    margin: 5px 5px 5px 30px; } }
+/* Structure
+   ================================== */
+.block {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px; }
+
+/* Small | Mobile (Max 640px)
+   ================================== */
+@media (max-width: 40em) {
+  .block {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    border-radius: 0px; } }
+/* Medium | Tablet (641px - 1024px)
+   ================================== */
+@media (min-width: 40.063em) and (max-width: 64em) {
+  .block {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    border-radius: 0px; } }
+.content.block, .form.block {
+  padding: 30px;
+  background-color: #ffffff;
+  border-top: 10px solid #69af3f; }
+
+/* Small | Mobile (Max 640px)
+   ================================== */
+@media (max-width: 40em) {
+  .form.block {
+    padding: 15px 0px; } }
+/* Medium | Tablet (641px - 1024px)
+   ================================== */
+@media (min-width: 40.063em) and (max-width: 64em) {
+  .form.block {
+    padding: 15px 0px; } }
+#page-heading .overlay {
+  -webkit-border-radius: inherit;
+  -moz-border-radius: inherit;
+  -ms-border-radius: inherit;
+  border-radius: inherit;
+  background-color: rgba(105, 175, 63, 0.8);
+  height: 100%;
+  overflow: hidden;
+  padding: 5% 5% 4%;
+  z-index: 2; }
+
+#page-heading .row {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: #69af3f;
+  background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/%7B4d0f1b16-00a0-4322-a50d-3d77561c2d77%7D_NH360_HDR_leafDewDrops_1920x1200.jpg");
+  background-origin: padding-box;
+  background-position: bottom center;
+  background-repeat: no-repeat; }
+
+/* Small | Mobile (Max 640px)
+   ================================== */
+@media (max-width: 40em) {
+  #page-heading .row {
+    background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{a0974bde-1b1c-47ec-abec-c2149d20cee5}_NH360_HDR_leafDewDrops_640x800.jpg"); } }
+/* Medium | Tablet (641px - 1024px)
+   ================================== */
+@media (min-width: 40.063em) and (max-width: 64em) {
+  #page-heading .row {
+    background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{d22c9a29-a62a-4d80-a28d-d1d3a15fc725}_NH360_HDR_leafDewDrops_1024x800.jpg"); } }
+#hero .row {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: #69af3f;
+  background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{b6fb123a-d907-445b-ac19-fc0a8d0a4b04}_NBJS_HDR_sailboats_1920x800.jpg");
+  background-origin: padding-box;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20px;
+  padding: 12% 0% 11%;
+  position: relative;
+  text-align: left; }
+
+/* Small | Mobile (Max 640px)
+   ================================== */
+@media (max-width: 40em) {
+  #hero .row {
+    background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{984a7b9b-4147-4c0a-8399-aa4487a3b845}_NBJS_HDR_sailboats_640x800.jpg"); } }
+/* Medium | Tablet (641px - 1024px)
+   ================================== */
+@media (min-width: 40.063em) and (max-width: 64em) {
+  #hero .row {
+    background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{e5c5eab3-2d38-43bf-94db-5c527e9a4866}_NBJS_HDR_sailboats_1024x800.jpg"); } }
+/* Identity
+   ================================== */
+#identity {
+  padding: 1% 0% 0.5%; }
+
+/* #identity img {  
+  height: 50px; 
+  margin: 5px 5px 5px 0px;  
+} */
+.host-logo {
+  filter: grayscale(100%);
+  max-width: 150px;
+  opacity: 0.7;
+  padding-top: 1%;
+  width: 100%; }
+
+/* Utilities
+   ================================== */
+img.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px; }
+
+img.radius {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px; }
+
+.dotted {
+  border-bottom: 1px dotted #cccccc;
+  padding-top: 2%;
+  padding-bottom: 2%; }
+
+.dotted:last-child {
+  border-bottom: 0px dotted #cccccc; }
+
+/* Footer
+   ================================== */
+footer {
+  font-size: 0.625em;
+  font-weight: bold;
+  line-height: 1.125em; }
+
+footer a {
+  font-weight: bold;
+  text-decoration: underline; }
+
+footer img {
+  height: 50px;
+  margin: 8px 5px 8px 0px; }
+
+footer {
+  padding-bottom: 1%; }
+
+footer #copyright {
+  padding: 3% 0% 2% 0%; }
+
+/* Social Media Icons + Font Awesome
+   ================================== */
+/* Design from http://codepen.io/graygilmore/pen/oclvb */
+.social-media a {
+  *display: inline;
+  *vertical-align: auto;
+  *zoom: 1;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 30px;
+  padding-left: 45px;
+  padding-right: 17px;
+  position: relative;
+  vertical-align: middle;
+  margin-bottom: 5px; }
+
+.social-media a:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  bottom: 0;
+  color: #ffffff;
+  font-family: 'FontAwesome';
+  font-size: 14px;
+  left: 0;
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 30px; }
+
+.share-count {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  color: #ffffff;
+  margin-left: 5px;
+  padding: 3px 10px 3px 10px; }
+
+.fa-facebook {
+  background-color: #263961; }
+
+.fa-facebook:before {
+  background-color: #3b5998; }
+
+.fa-google-plus {
+  background: #ac2d1e; }
+
+.fa-google-plus:before {
+  background: #dd4b39; }
+
+.fa-linkedin {
+  background: #15648a; }
+
+.fa-linkedin:before {
+  background: #007bb6; }
+
+.fa-twitter {
+  background-color: #0074a1; }
+
+.fa-twitter:before {
+  background-color: #00aced; }

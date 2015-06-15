@@ -1,0 +1,362 @@
+// Fonts
+// ================================== 
+
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,900,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
+
+
+// Default Page Colors
+// ================================== 
+
+$color-page-base: #555555;
+$color-page-headline: #444444;
+$color-page-background: #222222;
+
+// Brand Colors
+// ================================== 
+
+//New Hope 360
+$nh360-primary-base: #69af3f;
+$nh360-primary-hover: #5da240;
+$nh360-primary-border: #4f9231;
+
+$nh360-secondary-base: #2992a4;
+$nh360-secondary-hover: #207988;
+$nh360-secondary-border: #146472;
+
+//NFM
+$nfm-primary-base: #69af3f;
+$nfm-primary-hover: #5da240;
+$nfm-primary-border: #4f9231;
+
+$nfm-secondary-base: #2992a4;
+$nfm-secondary-hover: #207988;
+$nfm-secondary-border: #146472;
+
+//Engredea
+$eng-primary-base: #004681;
+$eng-primary-hover: #004c8c;
+$eng-primary-border: #002340;
+
+$eng-secondary-base: #69af3f;
+$eng-secondary-hover: #5da240;
+$eng-secondary-border: #4f9231;
+
+//Delicious Living
+$dl-primary-base: #e09616;
+$dl-primary-hover: #e08316;
+$dl-primary-border: #ce711e;
+
+$dl-secondary-base: #c82727;
+$dl-secondary-hover: #af1919;
+$dl-secondary-border: #a00b0b;
+
+//NEXT Forecast
+$nxtf-primary-base: #3c2415;
+$nxtf-primary-hover: #352013;
+$nxtf-primary-border: #321e12;
+
+$nxtf-secondary-base: #69af3f;
+$nxtf-secondary-hover: #5da240;
+$nxtf-secondary-border: #4f9231;
+
+//NEXT Accelerator
+$nxta-primary-base: #3c2415;
+$nxta-primary-hover: #352013;
+$nxta-primary-border: #321e12;
+
+$nxta-secondary-base: #4ec0ab;
+$nxta-secondary-hover: #40ac98;
+$nxta-secondary-border: #2f9a86;
+
+//NEXT Trend
+$nxtt-primary-base: #3c2415;
+$nxtt-primary-hover: #352013;
+$nxtt-primary-border: #321e12;
+
+$nxtt-secondary-base: #f6861f;
+$nxtt-secondary-hover: #d97418;
+$nxtt-secondary-border: #c76710;
+
+//NBJ
+$nbj-primary-base: #69af3f;
+$nbj-primary-hover: #5da240;
+$nbj-primary-border: #4f9231;
+
+$nbj-secondary-base: #2992a4;
+$nbj-secondary-hover: #207988;
+$nbj-secondary-border: #146472;
+
+//NBJ Summit
+$nbjs-primary-base: #69af3f;
+$nbjs-primary-hover: #5da240;
+$nbjs-primary-border: #4f9231;
+
+$nbjs-secondary-base: #2d323e;
+$nbjs-secondary-hover: #21252e;
+$nbjs-secondary-border: #181b22;
+
+//Club Industry
+$ci-primary-base: #146ab4;
+$ci-primary-hover: #115fa2;
+$ci-primary-border: #0f5591;
+
+$ci-secondary-base: #e43e29;
+$ci-secondary-hover: #b7200d;
+$ci-secondary-border: #a00b0b;
+
+//Club Industry Show
+$cis-primary-base: #146ab4;
+$cis-primary-hover: #115fa2;
+$cis-primary-border: #0f5591;
+
+$cis-secondary-base: #e43e29;
+$cis-secondary-hover: #b7200d;
+$cis-secondary-border: #a00b0b;
+
+//Natural Products Expo West
+$npew-primary-base: #69af3f;
+$npew-primary-hover: #5da240;
+$npew-primary-border: #4f9231;
+
+$npew-secondary-base: #653659;
+$npew-secondary-hover: #5d3052;
+$npew-secondary-border: #542949;
+
+$npew-tertiary-base: #c82b33;
+$npew-tertiary-hover: #af1919;
+$npew-tertiary-border: #a00b0b;
+
+//Natural Products Expo East
+$npee-primary-base: #69af3f;
+$npee-primary-hover: #5da240;
+$npee-primary-border: #4f9231;
+
+$npee-secondary-base: #653659;
+$npee-secondary-hover: #5d3052;
+$npee-secondary-border: #542949;
+
+$npee-tertiary-base: #677e94;
+$npee-tertiary-hover: #546c84;
+$npee-tertiary-border: #42586e;
+
+//Esca Bona
+$eb-primary-base: #7f9b34;
+$eb-primary-hover: #657e22;
+$eb-primary-border: #495e10;
+
+$eb-secondary-base: #7f9b34;
+$eb-secondary-hover: #657e22;
+$eb-secondary-border: #495e10;
+
+
+
+// Font Family
+// ================================== 
+
+$ci-font-family-default: 'Roboto', Helvetica, Arial, sans-serif; 
+$ci-font-family-headline: 'Roboto Condensed', Helvetica, Arial, sans-serif; 
+$ci-font-family-thin: 'Oswald', Helvetica, Arial, sans-serif; 
+
+$cis-font-family-default: 'Roboto', Helvetica, Arial, sans-serif; 
+$cis-font-family-headline: 'Roboto Condensed', Helvetica, Arial, sans-serif; 
+$cis-font-family-thin: 'Oswald', Helvetica, Arial, sans-serif; 
+
+$dl-font-family-default: 'Roboto', Helvetica, Arial, sans-serif; 
+$dl-font-family-headline: 'Roboto Condensed', Helvetica, Arial, sans-serif; 
+$dl-font-family-thin: 'Oswald', Helvetica, Arial, sans-serif; 
+
+$eb-font-family-default: 'Roboto', Helvetica, Arial, sans-serif; 
+$eb-font-family-headline: 'Roboto Condensed', Helvetica, Arial, sans-serif; 
+$eb-font-family-thin: 'Oswald', Helvetica, Arial, sans-serif; 
+
+$eng-font-family-default: 'Roboto', Helvetica, Arial, sans-serif; 
+$eng-font-family-headline: 'Roboto Condensed', Helvetica, Arial, sans-serif; 
+$eng-font-family-thin: 'Oswald', Helvetica, Arial, sans-serif; 
+
+$nbj-font-family-default: 'Roboto', Helvetica, Arial, sans-serif; 
+$nbj-font-family-headline: 'Roboto Condensed', Helvetica, Arial, sans-serif; 
+$nbj-font-family-thin: 'Oswald', Helvetica, Arial, sans-serif; 
+
+$nbjs-font-family-default: 'Roboto', Helvetica, Arial, sans-serif; 
+$nbjs-font-family-headline: 'Roboto Condensed', Helvetica, Arial, sans-serif; 
+$nbjs-font-family-thin: 'Oswald', Helvetica, Arial, sans-serif; 
+
+$nfm-font-family-default: 'Roboto', Helvetica, Arial, sans-serif; 
+$nfm-font-family-headline: 'Roboto Condensed', Helvetica, Arial, sans-serif; 
+$nfm-font-family-thin: 'Oswald', Helvetica, Arial, sans-serif; 
+
+$nh360-font-family-default: 'Roboto', Helvetica, Arial, sans-serif; 
+$nh360-font-family-headline: 'Roboto Condensed', Helvetica, Arial, sans-serif; 
+$nh360-font-family-thin: 'Oswald', Helvetica, Arial, sans-serif; 
+
+$npee-font-family-default: 'Roboto', Helvetica, Arial, sans-serif; 
+$npee-font-family-headline: 'Roboto Condensed', Helvetica, Arial, sans-serif; 
+$npee-font-family-thin: 'Oswald', Helvetica, Arial, sans-serif; 
+
+$npew-font-family-default: 'Roboto', Helvetica, Arial, sans-serif; 
+$npew-font-family-headline: 'Roboto Condensed', Helvetica, Arial, sans-serif; 
+$npew-font-family-thin: 'Oswald', Helvetica, Arial, sans-serif; 
+
+$nxta-font-family-default: 'Roboto', Helvetica, Arial, sans-serif; 
+$nxta-font-family-headline: 'Roboto Condensed', Helvetica, Arial, sans-serif; 
+$nxta-font-family-thin: 'Oswald', Helvetica, Arial, sans-serif; 
+
+$nxtf-font-family-default: 'Roboto', Helvetica, Arial, sans-serif; 
+$nxtf-font-family-headline: 'Roboto Condensed', Helvetica, Arial, sans-serif; 
+$nxtf-font-family-thin: 'Oswald', Helvetica, Arial, sans-serif; 
+
+$nxtt-font-family-default: 'Roboto', Helvetica, Arial, sans-serif; 
+$nxtt-font-family-headline: 'Roboto Condensed', Helvetica, Arial, sans-serif; 
+$nxtt-font-family-thin: 'Oswald', Helvetica, Arial, sans-serif; 
+
+
+// Brand Images - Page Heading (NPC)
+// ================================== 
+
+//NH360 - Page Heading
+$nh360-page-heading-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/%7B4d0f1b16-00a0-4322-a50d-3d77561c2d77%7D_NH360_HDR_leafDewDrops_1920x1200.jpg");
+$nh360-page-heading-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{d22c9a29-a62a-4d80-a28d-d1d3a15fc725}_NH360_HDR_leafDewDrops_1024x800.jpg");
+$nh360-page-heading-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{a0974bde-1b1c-47ec-abec-c2149d20cee5}_NH360_HDR_leafDewDrops_640x800.jpg");
+
+//Club Industry - Page Heading
+$ci-page-heading-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{2fc573be-d878-4b72-b8d5-e5838a35434e}_CI_HDR_runnerBlueShoesGrass_1920x800.jpg");
+$ci-page-heading-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{e64929ae-ca59-45cc-ab5a-f4fdc0a2a468}_CI_HDR_swimmerRedCap_1024x800.jpg");
+$ci-page-heading-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{ccbcb3a5-cc01-4efc-b260-9777bdd9f4fd}_CI_HDR_swimmerRedCap_640x800.jpg");
+
+//Delicious Living - Page Heading
+$dl-page-heading-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{f8c3a302-bcf8-41f0-a9c3-2243e0368b1d}_DL_HDR_avocadoSaladFarmFreshCookbook_1920x800.jpg");
+$dl-page-heading-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{c672953f-a35b-41ec-b78a-16f0f7438e47}_DL_HDR_avocadoSaladFarmFreshCookbook_1024x800.jpg");
+$dl-page-heading-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{fd910cbb-3977-4298-87c1-9f9781994784}_DL_HDR_avocadoSaladFarmFreshCookbook_640x800.jpg");
+
+
+// Brand Images - Hero
+// ================================== 
+
+//NH360
+$nh360-hero-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{fdc75212-85da-43ef-9f55-53249c8ecf75}_NH360_HDR_axeGardenHandsPotato_1920x800.jpg");
+$nh360-hero-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{a62e64b1-a73d-4238-8677-828f0a92e457}_NH360_HDR_axeGardenHandsPotato_1024x800.jpg");
+$nh360-hero-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{b6d56e8c-f8a6-42a7-969e-ba24afe4ed99}_NH360_HDR_axeGardenHandsPotato_640x800.jpg");
+$nh360-brand-logo: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{ad4f630d-bb32-40e9-bc9f-4a69087174f7}_NH360_LOGO_colorNHNM-2015Q1_209x100.png");
+$nh360-brand-logo-width: 209px;
+
+//NFM
+$nfm-hero-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{fdc75212-85da-43ef-9f55-53249c8ecf75}_NH360_HDR_axeGardenHandsPotato_1920x800.jpg");
+$nfm-hero-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{a62e64b1-a73d-4238-8677-828f0a92e457}_NH360_HDR_axeGardenHandsPotato_1024x800.jpg");
+$nfm-hero-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{b6d56e8c-f8a6-42a7-969e-ba24afe4ed99}_NH360_HDR_axeGardenHandsPotato_640x800.jpg");
+$nfm-brand-logo: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{ad4f630d-bb32-40e9-bc9f-4a69087174f7}_NH360_LOGO_colorNHNM-2015Q1_209x100.png");
+$nfm-brand-logo-width: 209px;
+
+//ENG
+$eng-hero-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{35e54d51-b779-4f0c-b4b3-b5859e3a7bf5}_NH360_HDR_glassBottles_1920x800.jpg");
+$eng-hero-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{97e1d880-f13b-45c7-bdb3-992e92e55b00}_NH360_HDR_glassBottles_1024x800.jpg");
+$eng-hero-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{fc60f7bb-f8d2-4fda-84fb-941febc2d693}_NH360_HDR_glassBottles_640x800.jpg");
+$eng-brand-logo: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{ab74186d-c26c-4614-bd6e-aa4705573f73}_ENG_LOGO_colorENGEWCube-2015Q1_204x100.png");
+$eng-brand-logo-width: 105px;
+
+//Delicious Living
+$dl-hero-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{f8c3a302-bcf8-41f0-a9c3-2243e0368b1d}_DL_HDR_avocadoSaladFarmFreshCookbook_1920x800.jpg");
+$dl-hero-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{c672953f-a35b-41ec-b78a-16f0f7438e47}_DL_HDR_avocadoSaladFarmFreshCookbook_1024x800.jpg");
+$dl-hero-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{fd910cbb-3977-4298-87c1-9f9781994784}_DL_HDR_avocadoSaladFarmFreshCookbook_640x800.jpg");
+$dl-brand-logo: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{efe2f7b9-201e-44c7-a385-0fb6227e7962}_DL_LOGO_colorDL-2015Q1_482x100.png");
+$dl-brand-logo-width: 350px;
+
+//NEXT Forecast
+$nxtf-hero-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{38aec70b-9459-4ae6-ace4-67a4e84403ce}_NXTF_HDR_nnnnBrown_1920x1200.jpg");
+$nxtf-hero-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{eb4e04ca-a176-4b95-a570-adee5c457c93}_NXTF_HDR_nnnnBrown_1024x800.jpg");
+$nxtf-hero-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{d7e62c52-5215-481f-8654-4725ba419dd0}_NXTF_HDR_nnnnBrown_640x800.jpg");
+$nxtf-brand-logo: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{c26ebe89-da38-4366-b866-169e2b21636d}_NEXT_LOGO_colorNEXTTagline-2015Q1_244x100.png");
+$nxtf-brand-logo-width: 200px;
+
+//NEXT Accelerator
+$nxta-hero-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{a143ba5a-64ac-4f02-aaf2-3d286fe9fce3}_NXTA_HDR_growingFromHands_1920x800.jpg");
+$nxta-hero-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{8f4afdb3-edfe-44cc-bcd5-b321d22cff58}_NXTA_HDR_growingFromHands_1024x800.jpg");
+$nxta-hero-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{e4946b58-e3c6-4b06-a885-2e10404ec09c}_NXTA_HDR_growingFromHands_640x800.jpg");
+$nxta-brand-logo: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{c26ebe89-da38-4366-b866-169e2b21636d}_NEXT_LOGO_colorNEXTTagline-2015Q1_244x100.png");
+$nxta-brand-logo-width: 200px;
+
+//NEXT Trend
+$nxtt-hero-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{31cabd50-2f82-4bb5-b6e6-11a1b71c4ac5}_NXTT_HDR_ingredientsSpoons_1920x800.jpg");
+$nxtt-hero-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{4c5b1c74-75f4-4fb5-ac6a-7159a0edcc83}_NXTT_HDR_ingredientsSpoons_1024x800.jpg");
+$nxtt-hero-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{497e4673-59a0-4412-8c00-a56b0f334ae2}_NXTT_HDR_ingredientsSpoons_640x800.jpg");
+$nxtt-brand-logo: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{c26ebe89-da38-4366-b866-169e2b21636d}_NEXT_LOGO_colorNEXTTagline-2015Q1_244x100.png");
+$nxtt-brand-logo-width: 200px;
+
+//NBJ
+$nbj-hero-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{b6fb123a-d907-445b-ac19-fc0a8d0a4b04}_NBJS_HDR_sailboats_1920x800.jpg");
+$nbj-hero-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{e5c5eab3-2d38-43bf-94db-5c527e9a4866}_NBJS_HDR_sailboats_1024x800.jpg");
+$nbj-hero-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{984a7b9b-4147-4c0a-8399-aa4487a3b845}_NBJS_HDR_sailboats_640x800.jpg");
+$nbj-brand-logo: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{ad4f630d-bb32-40e9-bc9f-4a69087174f7}_NH360_LOGO_colorNHNM-2015Q1_209x100.png");
+$nbj-brand-logo-width: 209px;
+
+//NBJ Summit
+$nbjs-hero-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{b6fb123a-d907-445b-ac19-fc0a8d0a4b04}_NBJS_HDR_sailboats_1920x800.jpg");
+$nbjs-hero-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{e5c5eab3-2d38-43bf-94db-5c527e9a4866}_NBJS_HDR_sailboats_1024x800.jpg");
+$nbjs-hero-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{984a7b9b-4147-4c0a-8399-aa4487a3b845}_NBJS_HDR_sailboats_640x800.jpg");
+$nbjs-brand-logo: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{8fcc0c07-5fb1-4f3b-9c26-e76dc4f4d45e}_NBJS_LOGO_colorNBJS-2015Q1_300x100.png");
+$nbjs-brand-logo-width: 225px;
+
+//Club Industry
+$ci-hero-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{2fc573be-d878-4b72-b8d5-e5838a35434e}_CI_HDR_runnerBlueShoesGrass_1920x800.jpg");
+$ci-hero-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{c85820a9-bf26-451b-b82c-a819deaf31eb}_CI_HDR_runnerBlueShoesGrass_1024x800.jpg");
+$ci-hero-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{b5631c55-6904-43f0-b30e-88d1e2f98320}_CI_HDR_runnerBlueShoesGrass_640x800.jpg");
+$ci-brand-logo: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{558c77e9-b36f-47fc-88e3-f569cc06cc40}_CI_LOGO_colorCI-2015Q1_500x100.png");
+$ci-brand-logo-width: 350px;
+
+//Club Industry Show
+$cis-hero-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{2fc573be-d878-4b72-b8d5-e5838a35434e}_CI_HDR_runnerBlueShoesGrass_1920x800.jpg");
+$cis-hero-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{c85820a9-bf26-451b-b82c-a819deaf31eb}_CI_HDR_runnerBlueShoesGrass_1024x800.jpg");
+$cis-hero-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{b5631c55-6904-43f0-b30e-88d1e2f98320}_CI_HDR_runnerBlueShoesGrass_640x800.jpg");
+$cis-brand-logo: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{b47cbb00-3492-48e0-8335-61ae12c5ebe4}_CI_LOGO_colorCIShow-2015Q1_450x100.png");
+$cis-brand-logo-width: 350px;
+
+//Natural Products Expo West
+$npew-hero-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{2d6f6ccf-5781-46cd-adac-73a96d44cbef}_EW_HDR_ACCFrontSignsAfternoon2014_1920x800.jpg");
+$npew-hero-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{ead89c26-196a-4d29-86ca-10b83c68adc2}_EW_HDR_ACCFrontSignsAfternoon2014_1024x800.jpg");
+$npew-hero-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{4d610d72-6914-44f6-b85a-a59a31a7c13f}_EW_HDR_ACCFrontSignsAfternoon2014_640x800.jpg");
+$npew-brand-logo: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{ab74186d-c26c-4614-bd6e-aa4705573f73}_ENG_LOGO_colorENGEWCube-2015Q1_204x100.png");
+$npew-brand-logo-width: 105px;
+
+//Natural Products Expo East
+$npee-hero-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{bdbd8ef0-0851-4b98-bc99-151ba28838e9}_EE_HDR_BCCSignTree2014_1920x800.jpg");
+$npee-hero-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{18f55a7c-66c7-4b2f-90ad-bb94d75619d5}_EE_HDR_BCCSignTree2014_1024x800.jpg");
+$npee-hero-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{f73566c6-e22f-4be8-aca8-9fdc1087755e}_EE_HDR_BCCSignTree2014_640x800.jpg");
+$npee-brand-logo: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{abe77122-85d0-400d-bed6-8e6bf793d45d}_EE_LOGO_colorEE-2015Q1_101x100.png");
+$npee-brand-logo-width: 55px;
+
+//Esca Bona
+$eb-hero-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{71f88ae5-106b-455b-b739-44db4d98aa00}_EB_HDR_escaBonaWall_1920x800.jpg");
+$eb-hero-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{3a4138ef-fb8f-4297-ae2b-40850cb95d4f}_EB_HDR_escaBonaWall_1024x800.jpg");
+$eb-hero-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{df5d7d6b-0edb-4a15-bfe8-800bdf39aa86}_EB_HDR_escaBonaWall_640x800.jpg");
+$eb-brand-logo: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{cb33013b-a370-44bc-88f3-7d6518c825ed}_EB_LOGO_colorEBHorz-2015Q1_300x100.png");
+$eb-brand-logo-width: 250px;
+
+
+
+// Mixins
+// ================================== 
+
+@mixin transition ($transition-type) {
+  -webkit-transition: $transition-type .2s ease-out;
+     -moz-transition: $transition-type .2s ease-out;
+       -o-transition: $transition-type .2s ease-out;     
+          transition: $transition-type .2s ease-out;
+}
+
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin color-white-rgba ($opacity) {
+  color: rgba(255, 255, 255, $opacity);
+}
+
+// Set Brand for Compile
+// ================================== 
+@import "variables_nh360";
+
