@@ -1,1 +1,1 @@
-# nhnm-landingpages-2015-Q2
+# nhnm-2015-Q2
