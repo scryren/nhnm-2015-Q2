@@ -18,8 +18,8 @@
     <script src="http://assets.penton.com/eloqua_site/nhnm/js/jquery.privacy-statement-nhnm.js" type="text/javascript"></script>
   
     <link href="http://assets.penton.com/eloqua_site/nhnm/css/normalize.css" rel="stylesheet" type="text/css" />
-    <link href="http://assets.penton.com/eloqua_site/nhnm/css/2.0/nhnm_page_ci_2.0.css" rel="stylesheet" type="text/css" />
-    <link href="http://assets.penton.com/eloqua_site/nhnm/css/2.0/nhnm_form_ci_2.0.css" rel="stylesheet" type="text/css" />
+    <link href="http://assets.penton.com/eloqua_site/nhnm/css/2.0/nhnm_page_nh360_2.0.css" rel="stylesheet" type="text/css" />
+    <link href="http://assets.penton.com/eloqua_site/nhnm/css/2.0/nhnm_form_nh360_2.0.css" rel="stylesheet" type="text/css" />
 
     
     <!--START ELOQUA TRACKING CODE-->
@@ -50,20 +50,40 @@
     var SubLookupRunning = true;
 
   //Create variables to store Subscription List Data Lookup ID (Email Group ID)
-  var emailGroup_CI_newsbeat = '{bd6cf56a-1dbb-4226-8c88-7b0d4c18b9d1}';
-  var emailGroup_CI_resourcebeat = '{d2af93d7-1760-47f7-8a94-f36a41ac922a}';
+  var emailGroup_ENG_IngredientsWeekly_Newsletter = '{efca0df5-9698-469b-8e56-b3352c88aa24}';
+  var emailGroup_ENG_InnovationToday_Newsletter = '{fc61fcdd-7dc4-4331-8a2c-0f2faf440241}';
+  var emailGroup_NBJ_Weekly_Newsletter = '{d03a5fcd-27d4-498c-b3ff-75bfea0a1ba8}';
+  var emailGroup_NFM_ProductsWeekly_Newsletter = '{1b5ff642-71b6-4d30-af20-743748a50080}';
+  var emailGroup_NFM_RetailToday_Newsletter = '{0e625d2b-65a6-4621-9801-f9c6b6dfff0f}';
+  var emailGroup_NH_BuzzToday_Newsletter = '{b0ff036f-7ceb-45fe-95de-484f6c99a04f}';
+  var emailGroup_NXTA_EntreWeekly_Newsletter = '{0bf08cc5-be9a-4a21-95d4-135abd00c03a}';
+  var emailGroup_NEXT_Weekly_Newsletter = '{badade25-5bc1-4e82-af43-2e6998e64d64}';
+
+
    
-    //Create variables for function: SetElqContent
-  var status_CI_newsbeat;
-  var status_CI_resourcebeat;
+  //Create variables for function: SetElqContent
+  var status_ENG_IngredientsWeekly_Newsletter;
+  var status_ENG_InnovationToday_Newsletter;
+  var status_NBJ_Weekly_Newsletter;
+  var status_NFM_ProductsWeekly_Newsletter;
+  var status_NFM_RetailToday_Newsletter;
+  var status_NH_BuzzToday_Newsletter;
+  var status_NXTA_EntreWeekly_Newsletter;
+  var status_NEXT_Weekly_Newsletter;
+
 
   //Eloqua's function to call Email Group Status
   //SetElqContent and GetElqGroupMembershipStatus are defined by Eloqua
     function SetElqContent() {
+    status_ENG_IngredientsWeekly_Newsletter = GetElqGroupMembershipStatus(emailGroup_ENG_IngredientsWeekly_Newsletter);
+    status_ENG_InnovationToday_Newsletter = GetElqGroupMembershipStatus(emailGroup_ENG_InnovationToday_Newsletter);
+    status_NBJ_Weekly_Newsletter = GetElqGroupMembershipStatus(emailGroup_NBJ_Weekly_Newsletter);
+    status_NFM_ProductsWeekly_Newsletter = GetElqGroupMembershipStatus(emailGroup_NFM_ProductsWeekly_Newsletter);
+    status_NFM_RetailToday_Newsletter = GetElqGroupMembershipStatus(emailGroup_NFM_RetailToday_Newsletter);
+    status_NH_BuzzToday_Newsletter = GetElqGroupMembershipStatus(emailGroup_NH_BuzzToday_Newsletter);
+    status_NXTA_EntreWeekly_Newsletter = GetElqGroupMembershipStatus(emailGroup_NXTA_EntreWeekly_Newsletter);
+    status_NEXT_Weekly_Newsletter = GetElqGroupMembershipStatus(emailGroup_NEXT_Weekly_Newsletter);
 
-    status_CI_newsbeat = GetElqGroupMembershipStatus(emailGroup_CI_newsbeat);
-    status_CI_resourcebeat = GetElqGroupMembershipStatus(emailGroup_CI_resourcebeat);
- 
      SetupForm();
 
     }
@@ -81,15 +101,38 @@
     function SetupForm() {
   //If visitor is subscribed to group, pre-check the box
 
-        
-        if (status_CI_newsbeat) {
-            document.getElementById('fieldID_CI_newsbeat').checked = true;
+    
+        if (status_ENG_IngredientsWeekly_Newsletter) {
+            document.getElementById('fieldID_ENG_IngredientsWeekly_Newsletter').checked = true;
         }
 
-        if (status_CI_resourcebeat) {
-            document.getElementById('fieldID_CI_resourcebeat').checked = true;
+        if (status_ENG_InnovationToday_Newsletter) {
+            document.getElementById('fieldID_ENG_InnovationToday_Newsletter').checked = true;
         }
-    
+
+        if (status_NBJ_Weekly_Newsletter) {
+            document.getElementById('fieldID_NBJ_Weekly_Newsletter').checked = true;
+        }
+
+        if (status_NFM_ProductsWeekly_Newsletter) {
+            document.getElementById('fieldID_NFM_ProductsWeekly_Newsletter').checked = true;
+        }
+
+        if (status_NFM_RetailToday_Newsletter) {
+            document.getElementById('fieldID_NFM_RetailToday_Newsletter').checked = true;
+        }
+
+        if (status_NH_BuzzToday_Newsletter) {
+            document.getElementById('fieldID_NH_BuzzToday_Newsletter').checked = true;
+        }
+
+        if (status_NXTA_EntreWeekly_Newsletter) {
+            document.getElementById('fieldID_NXTA_EntreWeekly_Newsletter').checked = true;
+        }
+
+        if (status_NEXT_Weekly_Newsletter) {
+            document.getElementById('fieldID_NEXT_Weekly_Newsletter').checked = true;
+        }
 
     }
 
@@ -114,7 +157,7 @@
       <div class="row">
 
         <div id="logo" class="small-12 text-left columns">
-          <a id="logo-link" href="http://www.clubindustry.com"></a>
+          <a id="logo-link" href="http://www.newhope360.com"></a>
           &nbsp;
         </div>
 
@@ -129,7 +172,7 @@
       <div class="small-12 columns">        
           
           <h1>
-            Newsletter Preference Center
+            Newsletter Preference Center 
           </h1>
 
       </div>
@@ -158,39 +201,108 @@
             <div class="small-12 medium-10 large-9 medium-centered columns">       
               <!--START ELOQUA FORM CODE-->  
 <form method="post" name="submgmt" action="https://s2130.t.eloqua.com/e/f2" id="submgmt" class="npc">
-    <input value="2015Q2_NPC_CI" type="hidden" name="elqFormName">
+    <input value="2015Q2_NPC_NEWHOPE" type="hidden" name="elqFormName">
     <input value="2130" type="hidden" name="elqSiteId">
     <input name="elqCampaignId" type="hidden">
 
 <!--Hidden Email Address field-->
 <input id="fieldID_emailAddress" type="hidden" name="emailAddress" value="<eloqua type='emailfield' syntax='EmailAddress' />">
 
-<h2>Weekly</h2>
+
+<h2>New Hope</h2>
 
   <label class="checkbox npc">
-    <input id="fieldID_CI_newsbeat" name="CI_newsbeat" type="checkbox" value="on">
-    <h4>Newsbeat</h4>
+    <input id="fieldID_NH_BuzzToday_Newsletter" name="NH_BuzzToday_Newsletter" type="checkbox" value="on">
+    <h4>Natural Buzz Today</h4> 
   </label>
 
   <p>
-    Breaking news, people on the move, mergers and acquisitions, supplier news, industry trends and more.
+    All the knowledge you need for suppliers, manufacturers and retailers of natural, organic and healthy products. 
   </p>
 
 
-<h2>Monthly</h2>
+<h2>Engredea</h2>
 
   <label class="checkbox npc">
-    <input id="fieldID_CI_resourcebeat" name="CI_resourcebeat" type="checkbox" value="on">
-    <h4>Resourcebeat</h4> 
+    <input id="fieldID_ENG_InnovationToday_Newsletter" name="ENG_InnovationToday_Newsletter" type="checkbox" value="on">
+    <h4>Natural Innovation Today</h4> 
   </label>
 
   <p>
-    Industry insight on software, equipment, group exercise, and certification.
+    Real-time competitive intelligence and industry news to your inbox five days a week. 
+  </p>
+
+  <label class="checkbox npc">
+    <input id="fieldID_ENG_IngredientsWeekly_Newsletter" name="ENG_IngredientsWeekly_Newsletter" type="checkbox" value="on">
+    <h4>Natural Ingredients Weekly</h4> 
+  </label>
+
+  <p>
+    Top stories from the latest issue and science, business trends and ingredient news. 
   </p>
 
 
 
-<h2>Unsubscribe from all Club Industry newsletters</h2>
+
+<h2>Natural Foods Merchandiser</h2>
+
+  <label class="checkbox npc">
+    <input id="fieldID_NFM_RetailToday_Newsletter" name="NFM_RetailToday_Newsletter" type="checkbox" value="on">
+    <h4>Natural Retail Today</h4> 
+  </label>
+
+  <p>
+    Bringing you important industry news and analysis including updates on Natural Products Expo. 
+  </p>
+
+
+  <label class="checkbox npc">
+    <input id="fieldID_NFM_ProductsWeekly_Newsletter" name="NFM_ProductsWeekly_Newsletter" type="checkbox" value="on">
+    <h4>Natural Products Weekly</h4> 
+  </label>
+
+  <p>
+    Most recent new products entering the natural products and organics marketplace. 
+  </p>
+
+
+<h2>Nutrition Business Journal</h2>
+
+  <label class="checkbox npc">
+    <input id="fieldID_NBJ_Weekly_Newsletter" name="NBJ_Weekly_Newsletter" type="checkbox" value="on">
+    <h4>NBJ Weekly</h4> 
+  </label>
+
+  <p>
+    Delivering news and analysis, trends, intelligence and commentary to nutrition industry professionals. 
+  </p>
+
+
+<h2>NEXT</h2>
+
+  <label class="checkbox npc">
+    <input id="fieldID_NXTA_EntreWeekly_Newsletter" name="NXTA_EntreWeekly_Newsletter" type="checkbox" value="on">
+    <h4>Natural Entrepreneur Weekly</h4> 
+  </label>
+
+  <p>
+    Weekly dose of expert insights, industry resources and communal inspiration to help natural products entrepreneurs thrive 
+  </p>
+
+
+  <label class="checkbox npc">
+    <input id="fieldID_NEXT_Weekly_Newsletter" name="NEXT_Weekly_Newsletter" type="checkbox" value="on">
+    <h4>NEXT Weekly</h4> 
+  </label>
+
+  <p>
+    Exclusive data, intelligence and insights to maximize your return on innovation.
+  </p>
+
+
+
+
+<h2>Unsubscribe from all New Hope newsletters</h2>
 
   <label class="checkbox npc">
     <input name="unsubscribeAll" type="checkbox" value="on">

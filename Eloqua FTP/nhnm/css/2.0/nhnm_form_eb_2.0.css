@@ -143,9 +143,19 @@
   margin: 0px;
   padding: 10px 15px 5px 15px; }
 
+#submgmt .checkbox-radio-container p {
+  font-size: 85%; 
+  margin-top: 0px; 
+  padding-left: 43px; }
+
 #submgmt .checkbox-option {
-  font-weight: 400;
-  cursor: pointer; }
+  font-weight: 400;  
+  cursor: pointer; }  
+
+#submgmt .checkbox-option.bold {
+  font-size: 110%;
+  font-weight: 600;
+  padding-left: 10px; }
 
 /* Fields
    ================================== */
