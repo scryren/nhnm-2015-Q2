@@ -53,6 +53,15 @@ $dl-secondary-base: #c82727;
 $dl-secondary-hover: #af1919;
 $dl-secondary-border: #a00b0b;
 
+//NEXT
+$next-primary-base: #3c2415;
+$next-primary-hover: #352013;
+$next-primary-border: #321e12;
+
+$next-secondary-base: #69af3f;
+$next-secondary-hover: #5da240;
+$next-secondary-border: #4f9231;
+
 //NEXT Forecast
 $nxtf-primary-base: #3c2415;
 $nxtf-primary-hover: #352013;
@@ -200,6 +209,10 @@ $npew-font-family-default: 'Roboto', Helvetica, Arial, sans-serif;
 $npew-font-family-headline: 'Roboto Condensed', Helvetica, Arial, sans-serif; 
 $npew-font-family-thin: 'Oswald', Helvetica, Arial, sans-serif; 
 
+$next-font-family-default: 'Roboto', Helvetica, Arial, sans-serif; 
+$next-font-family-headline: 'Roboto Condensed', Helvetica, Arial, sans-serif; 
+$next-font-family-thin: 'Oswald', Helvetica, Arial, sans-serif; 
+
 $nxta-font-family-default: 'Roboto', Helvetica, Arial, sans-serif; 
 $nxta-font-family-headline: 'Roboto Condensed', Helvetica, Arial, sans-serif; 
 $nxta-font-family-thin: 'Oswald', Helvetica, Arial, sans-serif; 
@@ -223,13 +236,33 @@ $nh360-page-heading-background-image-small: url("http://images.info.newhope360.c
 
 //Club Industry - Page Heading
 $ci-page-heading-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{2fc573be-d878-4b72-b8d5-e5838a35434e}_CI_HDR_runnerBlueShoesGrass_1920x800.jpg");
-$ci-page-heading-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{e64929ae-ca59-45cc-ab5a-f4fdc0a2a468}_CI_HDR_swimmerRedCap_1024x800.jpg");
-$ci-page-heading-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{ccbcb3a5-cc01-4efc-b260-9777bdd9f4fd}_CI_HDR_swimmerRedCap_640x800.jpg");
+$ci-page-heading-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{c85820a9-bf26-451b-b82c-a819deaf31eb}_CI_HDR_runnerBlueShoesGrass_1024x800.jpg");
+$ci-page-heading-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{b5631c55-6904-43f0-b30e-88d1e2f98320}_CI_HDR_runnerBlueShoesGrass_640x800.jpg");
 
 //Delicious Living - Page Heading
 $dl-page-heading-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{f8c3a302-bcf8-41f0-a9c3-2243e0368b1d}_DL_HDR_avocadoSaladFarmFreshCookbook_1920x800.jpg");
 $dl-page-heading-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{c672953f-a35b-41ec-b78a-16f0f7438e47}_DL_HDR_avocadoSaladFarmFreshCookbook_1024x800.jpg");
 $dl-page-heading-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{fd910cbb-3977-4298-87c1-9f9781994784}_DL_HDR_avocadoSaladFarmFreshCookbook_640x800.jpg");
+
+//NEXT - Page Heading
+$next-page-heading-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{38aec70b-9459-4ae6-ace4-67a4e84403ce}_NXTF_HDR_nnnnBrown_1920x1200.jpg");
+$next-page-heading-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{eb4e04ca-a176-4b95-a570-adee5c457c93}_NXTF_HDR_nnnnBrown_1024x800.jpg");
+$next-page-heading-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{d7e62c52-5215-481f-8654-4725ba419dd0}_NXTF_HDR_nnnnBrown_640x800.jpg");
+
+//NEXT Forecast - Page Heading
+$nxtf-page-heading-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{38aec70b-9459-4ae6-ace4-67a4e84403ce}_NXTF_HDR_nnnnBrown_1920x1200.jpg");
+$nxtf-page-heading-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{eb4e04ca-a176-4b95-a570-adee5c457c93}_NXTF_HDR_nnnnBrown_1024x800.jpg");
+$nxtf-page-heading-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{d7e62c52-5215-481f-8654-4725ba419dd0}_NXTF_HDR_nnnnBrown_640x800.jpg");
+
+//NEXT Accelerator - Page Heading
+$nxta-page-heading-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{a143ba5a-64ac-4f02-aaf2-3d286fe9fce3}_NXTA_HDR_growingFromHands_1920x800.jpg");
+$nxta-page-heading-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{8f4afdb3-edfe-44cc-bcd5-b321d22cff58}_NXTA_HDR_growingFromHands_1024x800.jpg");
+$nxta-page-heading-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{e4946b58-e3c6-4b06-a885-2e10404ec09c}_NXTA_HDR_growingFromHands_640x800.jpg");
+
+//NEXT Trend - Page Heading
+$nxtt-page-heading-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{31cabd50-2f82-4bb5-b6e6-11a1b71c4ac5}_NXTT_HDR_ingredientsSpoons_1920x800.jpg");
+$nxtt-page-heading-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{4c5b1c74-75f4-4fb5-ac6a-7159a0edcc83}_NXTT_HDR_ingredientsSpoons_1024x800.jpg");
+$nxtt-page-heading-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{497e4673-59a0-4412-8c00-a56b0f334ae2}_NXTT_HDR_ingredientsSpoons_640x800.jpg");
 
 
 // Brand Images - Hero
@@ -263,6 +296,13 @@ $dl-hero-background-image-small: url("http://images.info.newhope360.com/EloquaIm
 $dl-brand-logo: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{efe2f7b9-201e-44c7-a385-0fb6227e7962}_DL_LOGO_colorDL-2015Q1_482x100.png");
 $dl-brand-logo-width: 350px;
 
+//NEXT
+$next-hero-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{38aec70b-9459-4ae6-ace4-67a4e84403ce}_NXTF_HDR_nnnnBrown_1920x1200.jpg");
+$next-hero-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{eb4e04ca-a176-4b95-a570-adee5c457c93}_NXTF_HDR_nnnnBrown_1024x800.jpg");
+$next-hero-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{d7e62c52-5215-481f-8654-4725ba419dd0}_NXTF_HDR_nnnnBrown_640x800.jpg");
+$next-brand-logo: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{c26ebe89-da38-4366-b866-169e2b21636d}_NEXT_LOGO_colorNEXTTagline-2015Q1_244x100.png");
+$next-brand-logo-width: 200px;
+
 //NEXT Forecast
 $nxtf-hero-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{38aec70b-9459-4ae6-ace4-67a4e84403ce}_NXTF_HDR_nnnnBrown_1920x1200.jpg");
 $nxtf-hero-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{eb4e04ca-a176-4b95-a570-adee5c457c93}_NXTF_HDR_nnnnBrown_1024x800.jpg");
@@ -285,9 +325,9 @@ $nxtt-brand-logo: url("http://images.info.newhope360.com/EloquaImages/clients/Ne
 $nxtt-brand-logo-width: 200px;
 
 //NBJ
-$nbj-hero-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{b6fb123a-d907-445b-ac19-fc0a8d0a4b04}_NBJS_HDR_sailboats_1920x800.jpg");
-$nbj-hero-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{e5c5eab3-2d38-43bf-94db-5c527e9a4866}_NBJS_HDR_sailboats_1024x800.jpg");
-$nbj-hero-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{984a7b9b-4147-4c0a-8399-aa4487a3b845}_NBJS_HDR_sailboats_640x800.jpg");
+$nbj-hero-background-image-large: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{46ac80bf-45cd-4acd-bfc6-725011f98dde}_NBJ_HDR_brownTable_1920x800.jpg");
+$nbj-hero-background-image-medium: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{c2679c47-99e9-422e-a020-25b341386f71}_NBJ_HDR_brownTable_1024x800.jpg");
+$nbj-hero-background-image-small: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{0a810561-f1a3-454a-be83-1e9c9919dcd6}_NBJ_HDR_brownTable_640x800.jpg");
 $nbj-brand-logo: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{ad4f630d-bb32-40e9-bc9f-4a69087174f7}_NH360_LOGO_colorNHNM-2015Q1_209x100.png");
 $nbj-brand-logo-width: 209px;
 
@@ -358,5 +398,5 @@ $eb-brand-logo-width: 250px;
 
 // Set Brand for Compile
 // ================================== 
-@import "variables_nh360";
+@import "variables_nbj";
 

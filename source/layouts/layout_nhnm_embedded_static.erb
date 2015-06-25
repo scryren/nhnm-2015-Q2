@@ -16,11 +16,20 @@
   <!--Scripts and Stylesheets-->
   <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" %>
   <%= javascript_include_tag "http://assets.penton.com/eloqua_site/nhnm/js/jquery.generic-form-error-notification.js" %>
-  <%= javascript_include_tag "http://assets.penton.com/eloqua_site/nhnm/js/jquery.privacy-statement-nhnm.js" %>  
+  <%= javascript_include_tag "http://assets.penton.com/eloqua_site/nhnm/js/jquery.privacy-statement-nhnm.js" %> 
+  <%= javascript_include_tag "http://assets.penton.com/eloqua_site/nhnm/js/jquery.querystring.pr_form.js" %>
 
   <%= stylesheet_link_tag "http://assets.penton.com/eloqua_site/nhnm/css/2.0/nhnm_form_nh360_2.0.css" %>
 
   <%# stylesheet_link_tag 'nhnm_form_brand_2.0' %>
+
+  <style type="text/css">
+    /* Full width of container*/
+    #eloqua-form .column, #eloqua-form .columns {
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+  </style>
 
   <style type="text/css">
   /* Overrides */
@@ -30,7 +39,7 @@
       <div class="row form block">
         <div class="small-12 columns">                
           <div class="row">
-            <div class="small-12 medium-10 large-7 medium-centered columns">       
+            <div class="small-12 columns">       
               <%= yield %>
             </div>
           </div>

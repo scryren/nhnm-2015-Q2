@@ -267,19 +267,19 @@ ul li {
   background-color: #146ab4;
   background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{2fc573be-d878-4b72-b8d5-e5838a35434e}_CI_HDR_runnerBlueShoesGrass_1920x800.jpg");
   background-origin: padding-box;
-  background-position: bottom center;
+  background-position: center bottom;
   background-repeat: no-repeat; }
 
 /* Small | Mobile (Max 640px)
    ================================== */
 @media (max-width: 40em) {
   #page-heading .row {
-    background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{ccbcb3a5-cc01-4efc-b260-9777bdd9f4fd}_CI_HDR_swimmerRedCap_640x800.jpg"); } }
+    background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{b5631c55-6904-43f0-b30e-88d1e2f98320}_CI_HDR_runnerBlueShoesGrass_640x800.jpg"); } }
 /* Medium | Tablet (641px - 1024px)
    ================================== */
 @media (min-width: 40.063em) and (max-width: 64em) {
   #page-heading .row {
-    background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{e64929ae-ca59-45cc-ab5a-f4fdc0a2a468}_CI_HDR_swimmerRedCap_1024x800.jpg"); } }
+    background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{c85820a9-bf26-451b-b82c-a819deaf31eb}_CI_HDR_runnerBlueShoesGrass_1024x800.jpg"); } }
 #hero .row {
   background-attachment: scroll;
   background-clip: border-box;

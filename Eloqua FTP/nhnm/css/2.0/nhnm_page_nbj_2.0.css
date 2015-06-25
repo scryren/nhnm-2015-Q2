@@ -267,7 +267,7 @@ ul li {
   background-color: #69af3f;
   background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/%7B4d0f1b16-00a0-4322-a50d-3d77561c2d77%7D_NH360_HDR_leafDewDrops_1920x1200.jpg");
   background-origin: padding-box;
-  background-position: bottom center;
+  background-position: center bottom;
   background-repeat: no-repeat; }
 
 /* Small | Mobile (Max 640px)
@@ -284,7 +284,7 @@ ul li {
   background-attachment: scroll;
   background-clip: border-box;
   background-color: #69af3f;
-  background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{b6fb123a-d907-445b-ac19-fc0a8d0a4b04}_NBJS_HDR_sailboats_1920x800.jpg");
+  background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{46ac80bf-45cd-4acd-bfc6-725011f98dde}_NBJ_HDR_brownTable_1920x800.jpg");
   background-origin: padding-box;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -298,12 +298,12 @@ ul li {
    ================================== */
 @media (max-width: 40em) {
   #hero .row {
-    background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{984a7b9b-4147-4c0a-8399-aa4487a3b845}_NBJS_HDR_sailboats_640x800.jpg"); } }
+    background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{0a810561-f1a3-454a-be83-1e9c9919dcd6}_NBJ_HDR_brownTable_640x800.jpg"); } }
 /* Medium | Tablet (641px - 1024px)
    ================================== */
 @media (min-width: 40.063em) and (max-width: 64em) {
   #hero .row {
-    background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{e5c5eab3-2d38-43bf-94db-5c527e9a4866}_NBJS_HDR_sailboats_1024x800.jpg"); } }
+    background-image: url("http://images.info.newhope360.com/EloquaImages/clients/NewHopeNaturalMedia/{c2679c47-99e9-422e-a020-25b341386f71}_NBJ_HDR_brownTable_1024x800.jpg"); } }
 /* Identity
    ================================== */
 #identity {

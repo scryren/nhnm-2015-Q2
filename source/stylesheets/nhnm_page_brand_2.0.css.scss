@@ -232,12 +232,12 @@ ul li {
 }
 
 #page-heading .row { 
-  background-attachment: fixed;  /* Fixed for faux parallax */
+  background-attachment: scroll; 
   background-clip: border-box;
   background-color: $color-brand-base; 
   background-image: $page-heading-background-image-large;
   background-origin: padding-box;  
-  background-position: bottom center;
+  background-position: center bottom;
   background-repeat: no-repeat; 
 }
 

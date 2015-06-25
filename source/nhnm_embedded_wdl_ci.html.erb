@@ -605,10 +605,10 @@ layout: layout_nhnm_embedded_wdl
    
   
   
-<label>Subscribe to our newsletters <label class="optional">(optional)</label></label>
 <!--CUSTOM QUESTION SINGLE CHECKBOX-->
   <div class="row">     
     <div class="small-12 medium-12 checkbox-radio-container columns">  
+    <label>Subscribe to our newsletters <label class="optional">(optional)</label></label>
 
       <label class="checkbox-single">
         <input name="HTMLNAMEFORTHISFIELD" type="checkbox" value="on">
@@ -618,7 +618,25 @@ layout: layout_nhnm_embedded_wdl
       </label>
         
     </div>
-  </div>     
+  </div>    
+
+<!--Partner Reference (Entry URL)-->
+  <div class="row" style="display: none;">     
+    <div class="small-12 medium-12 columns">  
+    
+      <label for="partnerref">
+        Partner Reference (Entry URL)
+      </label>
+
+    </div>
+
+    <div class="small-12 medium-12 columns">
+                                
+    <input id="myPartnerRef" name="partnerref" type="text" value="">
+    
+    </div>
+  </div>  
+
            
 <!--SUBMIT BUTTON-->       
   <div class="row">

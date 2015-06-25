@@ -281,6 +281,19 @@ textarea.LV_invalid_field:active {
 /* Foundation Grid for #submgmt
 //================================== */
 
+#eloqua-form *, #eloqua-form *::before, #eloqua-form *::after {
+  box-sizing: border-box;
+} 
+
+#eloqua-form .row::after {
+  clear: both;
+}
+
+#eloqua-form .row::before, #eloqua-form .row::after {
+  content: " ";
+  display: table;
+}
+
 @media only screen {
   #submgmt .small-push-0 {
     position: relative;
