@@ -4,39 +4,45 @@
     var SubLookupRunning = true;
 
 	//Create variables to store Subscription List Data Lookup ID (Email Group ID)
+
+
+
+
+	var emailGroup_DL_deliciousLivingeNewsletter = '{119ec7cd-1a95-4547-8a20-6505c2527506}';
 	var emailGroup_ENG_IngredientsWeekly_Newsletter = '{efca0df5-9698-469b-8e56-b3352c88aa24}';
 	var emailGroup_ENG_InnovationToday_Newsletter = '{fc61fcdd-7dc4-4331-8a2c-0f2faf440241}';
 	var emailGroup_NBJ_Weekly_Newsletter = '{d03a5fcd-27d4-498c-b3ff-75bfea0a1ba8}';
 	var emailGroup_NFM_ProductsWeekly_Newsletter = '{1b5ff642-71b6-4d30-af20-743748a50080}';
 	var emailGroup_NFM_RetailToday_Newsletter = '{0e625d2b-65a6-4621-9801-f9c6b6dfff0f}';
-	var emailGroup_NH_BuzzToday_Newsletter = '{b0ff036f-7ceb-45fe-95de-484f6c99a04f}';
+	var emailGroup_NH360_BuzzToday_Newsletter = '{b0ff036f-7ceb-45fe-95de-484f6c99a04f}';
 	var emailGroup_NXTA_EntreWeekly_Newsletter = '{0bf08cc5-be9a-4a21-95d4-135abd00c03a}';
-	var emailGroup_NEXT_Weekly_Newsletter = '{badade25-5bc1-4e82-af43-2e6998e64d64}';
-
 
    
   //Create variables for function: SetElqContent
+
+	var status_DL_deliciousLivingeNewsletter;
 	var status_ENG_IngredientsWeekly_Newsletter;
 	var status_ENG_InnovationToday_Newsletter;
 	var status_NBJ_Weekly_Newsletter;
 	var status_NFM_ProductsWeekly_Newsletter;
 	var status_NFM_RetailToday_Newsletter;
-	var status_NH_BuzzToday_Newsletter;
+	var status_NH360_BuzzToday_Newsletter;
 	var status_NXTA_EntreWeekly_Newsletter;
-	var status_NEXT_Weekly_Newsletter;
 
 
 	//Eloqua's function to call Email Group Status
 	//SetElqContent and GetElqGroupMembershipStatus are defined by Eloqua
     function SetElqContent() {
+
+		status_DL_deliciousLivingeNewsletter = GetElqGroupMembershipStatus(emailGroup_DL_deliciousLivingeNewsletter);
 		status_ENG_IngredientsWeekly_Newsletter = GetElqGroupMembershipStatus(emailGroup_ENG_IngredientsWeekly_Newsletter);
 		status_ENG_InnovationToday_Newsletter = GetElqGroupMembershipStatus(emailGroup_ENG_InnovationToday_Newsletter);
 		status_NBJ_Weekly_Newsletter = GetElqGroupMembershipStatus(emailGroup_NBJ_Weekly_Newsletter);
 		status_NFM_ProductsWeekly_Newsletter = GetElqGroupMembershipStatus(emailGroup_NFM_ProductsWeekly_Newsletter);
 		status_NFM_RetailToday_Newsletter = GetElqGroupMembershipStatus(emailGroup_NFM_RetailToday_Newsletter);
-		status_NH_BuzzToday_Newsletter = GetElqGroupMembershipStatus(emailGroup_NH_BuzzToday_Newsletter);
+		status_NH360_BuzzToday_Newsletter = GetElqGroupMembershipStatus(emailGroup_NH360_BuzzToday_Newsletter);
 		status_NXTA_EntreWeekly_Newsletter = GetElqGroupMembershipStatus(emailGroup_NXTA_EntreWeekly_Newsletter);
-		status_NEXT_Weekly_Newsletter = GetElqGroupMembershipStatus(emailGroup_NEXT_Weekly_Newsletter);
+
 
      SetupForm();
 
@@ -56,11 +62,15 @@
 	//If visitor is subscribed to group, pre-check the box
 
 		
-				if (status_ENG_IngredientsWeekly_Newsletter) {
+		if (status_DL_deliciousLivingeNewsletter) {
+            document.getElementById('fieldID_DL_deliciousLivingeNewsletter').checked = true;
+        }
+		
+		if (status_ENG_IngredientsWeekly_Newsletter) {
             document.getElementById('fieldID_ENG_IngredientsWeekly_Newsletter').checked = true;
         }
 
-				if (status_ENG_InnovationToday_Newsletter) {
+		if (status_ENG_InnovationToday_Newsletter) {
             document.getElementById('fieldID_ENG_InnovationToday_Newsletter').checked = true;
         }
 
@@ -76,17 +86,14 @@
             document.getElementById('fieldID_NFM_RetailToday_Newsletter').checked = true;
         }
 
-        if (status_NH_BuzzToday_Newsletter) {
-            document.getElementById('fieldID_NH_BuzzToday_Newsletter').checked = true;
+        if (status_NH360_BuzzToday_Newsletter) {
+            document.getElementById('fieldID_NH360_BuzzToday_Newsletter').checked = true;
         }
 
         if (status_NXTA_EntreWeekly_Newsletter) {
             document.getElementById('fieldID_NXTA_EntreWeekly_Newsletter').checked = true;
         }
 
-        if (status_NEXT_Weekly_Newsletter) {
-            document.getElementById('fieldID_NEXT_Weekly_Newsletter').checked = true;
-        }
 
     }
 

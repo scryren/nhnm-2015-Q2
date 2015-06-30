@@ -4,18 +4,20 @@
     var SubLookupRunning = true;
 
 	//Create variables to store Subscription List Data Lookup ID (Email Group ID)
-	var emailGroup_DL_deliciousLivingeNewsletter = '{119ec7cd-1a95-4547-8a20-6505c2527506}';
-
+	var emailGroup_CI_newsbeat = '{bd6cf56a-1dbb-4226-8c88-7b0d4c18b9d1}';
+	var emailGroup_CI_resourcebeat = '{d2af93d7-1760-47f7-8a94-f36a41ac922a}';
    
-  //Create variables for function: SetElqContent
-	var status_DL_deliciousLivingeNewsletter;
+    //Create variables for function: SetElqContent
+	var status_CI_newsbeat;
+	var status_CI_resourcebeat;
 
 	//Eloqua's function to call Email Group Status
 	//SetElqContent and GetElqGroupMembershipStatus are defined by Eloqua
     function SetElqContent() {
 
-		status_DL_deliciousLivingeNewsletter = GetElqGroupMembershipStatus(emailGroup_DL_deliciousLivingeNewsletter);
-
+		status_CI_newsbeat = GetElqGroupMembershipStatus(emailGroup_CI_newsbeat);
+		status_CI_resourcebeat = GetElqGroupMembershipStatus(emailGroup_CI_resourcebeat);
+ 
      SetupForm();
 
     }
@@ -32,10 +34,16 @@
 
     function SetupForm() {
 	//If visitor is subscribed to group, pre-check the box
-		
-		if (status_DL_deliciousLivingeNewsletter) {
-            document.getElementById('fieldID_DL_deliciousLivingeNewsletter').checked = true;
+
+        
+        if (status_CI_newsbeat) {
+            document.getElementById('fieldID_CI_newsbeat').checked = true;
         }
+
+        if (status_CI_resourcebeat) {
+            document.getElementById('fieldID_CI_resourcebeat').checked = true;
+        }
+		
 
     }
 

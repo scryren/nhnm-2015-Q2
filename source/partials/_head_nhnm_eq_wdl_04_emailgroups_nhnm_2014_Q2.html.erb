@@ -12,6 +12,7 @@
 	var emailGroup_NFM_naturalRetailWeekly = '{8d3d6311-2f7f-47a2-b197-7c1248594e26}';
 	var emailGroup_NFM_newProductShowcase = '{8e243a8a-fbf5-432a-9d87-f4a5fd8d4f66}';
 	var emailGroup_NBJENG_NBJENGWeekly = '{4f4365cf-5f58-4c8b-9aa6-1eea7ff1eb16}';
+	var emailGroup_DL_deliciousLivingeNewsletter = '{119ec7cd-1a95-4547-8a20-6505c2527506}';
 	var emailGroup_NXTA_acceleratorWeekly = '{bcad4db4-227a-4e1a-a02f-351ca380f5ce}';
    
     //Create variables for function: SetElqContent
@@ -23,7 +24,9 @@
 	var status_NFM_naturalRetailWeekly;
 	var status_NFM_newProductShowcase;
 	var status_NBJENG_NBJENGWeekly;
+	var status_DL_deliciousLivingeNewsletter;
 	var status_NXTA_acceleratorWeekly;
+	var status_NXTT_trendMonthly;
 
 	//Eloqua's function to call Email Group Status
 	//SetElqContent and GetElqGroupMembershipStatus are defined by Eloqua
@@ -37,6 +40,7 @@
 		status_NFM_naturalRetailWeekly = GetElqGroupMembershipStatus(emailGroup_NFM_naturalRetailWeekly);
 		status_NFM_newProductShowcase = GetElqGroupMembershipStatus(emailGroup_NFM_newProductShowcase);
 		status_NBJENG_NBJENGWeekly = GetElqGroupMembershipStatus(emailGroup_NBJENG_NBJENGWeekly);
+		status_DL_deliciousLivingeNewsletter = GetElqGroupMembershipStatus(emailGroup_DL_deliciousLivingeNewsletter);
 		status_NXTA_acceleratorWeekly = GetElqGroupMembershipStatus(emailGroup_NXTA_acceleratorWeekly);
  
      SetupForm();
@@ -87,6 +91,10 @@
 		
 		if (status_NBJENG_NBJENGWeekly) {
             document.getElementById('fieldID_NBJENG_NBJENGWeekly').checked = true;
+        }
+		
+		if (status_DL_deliciousLivingeNewsletter) {
+            document.getElementById('fieldID_DL_deliciousLivingeNewsletter').checked = true;
         }
 		
 		if (status_NXTA_acceleratorWeekly) {
